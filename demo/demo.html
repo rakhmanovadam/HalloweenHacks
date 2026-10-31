@@ -1,0 +1,829 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Agrivision · Step-by-step demo</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg stroke='%230C3020' stroke-width='9.5' stroke-linecap='round'%3E%3Cpath d='M19 50 48 23M20 67 64 25M66 42 80 29M31 74 51 55M49 75 82 45M68 75 84 60'/%3E%3C/g%3E%3Crect x='54' y='42.5' width='11.5' height='11.5' rx='2.5' fill='%23A4F80C' transform='rotate(45 59.75 48.25)'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: presenter console. Field map stage on the left, narration + "say this" script rail on the right; stacks on phones. */
+:root{
+  --bg:#FFFFFF; --surface:#FFFFFF; --ink:#0C3020; --text:#1B2A21; --muted:#5D6D62; --line:#E2E8E0; --tint:#F2F6EF;
+  --accent:#2A6FC0; --brand:#0C3020; --lime:#A4F80C; --lime-soft:#EEFCCF;
+  --soil:#E4DDCB; --crop:#CFE0BC; --woods:#4B6A47; --water:#86B9DC; --road:#C9C4B8;
+  --weed:#7A4ED4; --disease:#D0841A; --insect:#CF3467; --abiotic:#2A8BC4; --unknown:#858C84; --flag:#E2AC00;
+  --font-display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --font-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  --shadow:0 1px 2px rgba(12,48,32,.05),0 8px 24px rgba(12,48,32,.06);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:15px;line-height:1.5;
+  padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px));padding-block:16px 40px}
+.app{max-width:1380px;margin:0 auto;display:grid;gap:16px}
+button,a{font:inherit;color:inherit}
+button:focus-visible,summary:focus-visible,a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 20px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand svg{flex:none}
+.brand b{font-family:var(--font-display);font-stretch:92%;font-weight:800;font-size:24px;letter-spacing:-.02em;line-height:1;color:var(--ink)}
+.brand span{font-family:var(--font-mono);font-size:11.5px;color:var(--muted);display:block;margin-top:4px}
+.top-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.btn{border:1px solid #CDD7CA;background:#fff;border-radius:999px;padding:8px 14px;cursor:pointer;font-size:14px;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.btn:hover{background:var(--tint)}
+.btn.primary{background:var(--brand);border-color:var(--brand);color:#fff}
+.btn.primary:hover{background:#174A31}
+.btn.on{background:var(--lime);border-color:var(--brand);color:var(--ink)}
+.btn:disabled{opacity:.4;cursor:default}
+
+.steps{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+.steps button{flex:0 0 auto;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px 6px 7px;cursor:pointer;display:flex;gap:7px;align-items:center;font-size:13px;color:var(--muted);font-weight:600}
+.steps button .n{font-family:var(--font-mono);font-size:11px;width:20px;height:20px;border-radius:50%;display:grid;place-items:center;background:var(--tint)}
+.steps button[aria-current="step"]{background:var(--brand);border-color:var(--brand);color:#fff}
+.steps button[aria-current="step"] .n{background:var(--lime);color:var(--ink)}
+.steps button.done{color:var(--ink)}
+.steps button.done .n{background:var(--brand);color:#fff}
+.progress{height:3px;background:var(--line);border-radius:3px;overflow:hidden}
+.progress i{display:block;height:100%;background:var(--brand);transition:width .35s}
+
+main{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,430px);gap:20px;align-items:start}
+@media (max-width:940px){main{grid-template-columns:minmax(0,1fr)}}
+
+.stage{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;min-width:0;position:relative;box-shadow:var(--shadow)}
+.stage-head{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-family:var(--font-mono);font-size:12px;color:var(--muted);margin-bottom:8px}
+.canvas-wrap{position:relative}
+canvas{display:block;width:100%;cursor:crosshair;touch-action:manipulation}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:#fff;font-family:var(--font-mono);font-size:11px;padding:3px 6px;border-radius:4px;white-space:nowrap;transform:translate(10px,10px)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:10px;font-size:12.5px;color:var(--muted)}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:6px;vertical-align:-2px}
+.legend i.ring{background:transparent!important;border:2px dashed}
+.ramp{display:inline-block;width:120px;height:10px;border-radius:2px;vertical-align:-1px;margin:0 6px;background:linear-gradient(90deg,#9E4426,#D29A35,#B5C657,#3D8B38)}
+.controls{display:flex;gap:8px;align-items:center;justify-content:space-between;margin-top:14px;flex-wrap:wrap}
+.controls .hint{font-size:12px;color:var(--muted)}
+.controls .hint kbd{font:11px var(--font-mono);border:1px solid #CDD7CA;border-bottom-width:2px;border-radius:4px;padding:0 4px}
+.controls .grp{display:flex;gap:8px}
+
+.panel{min-width:0;display:grid;gap:16px}
+.kicker{font-family:var(--font-mono);font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+h2{font-family:var(--font-display);font-stretch:84%;font-weight:800;font-size:clamp(26px,3.1vw,34px);line-height:1.05;letter-spacing:-.015em;text-wrap:balance;margin:4px 0 0;color:var(--ink)}
+.lead{margin:0;max-width:62ch}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.stat{background:var(--tint);border-radius:12px;padding:10px 12px;min-width:0}
+.stat .v{font-family:var(--font-display);font-stretch:84%;font-weight:800;font-size:24px;line-height:1.1;color:var(--ink);font-variant-numeric:tabular-nums}
+.stat .l{font-size:12px;color:var(--muted);line-height:1.3}
+.script{background:var(--lime-soft);border:1px solid #D6F29A;border-radius:12px;padding:12px 14px}
+.script summary{cursor:pointer;font-family:var(--font-mono);font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:#174A31;list-style:none;display:flex;justify-content:space-between;font-weight:600}
+.script summary::-webkit-details-marker{display:none}
+.script summary::after{content:"hide";text-transform:none;letter-spacing:0;color:var(--muted);font-weight:400}
+.script:not([open]) summary::after{content:"show"}
+.script p{margin:8px 0 0;font-size:16px;line-height:1.55;color:var(--ink)}
+.detail{display:grid;gap:12px;min-width:0}
+.detail h3{font-family:var(--font-mono);font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:0}
+.detail ul{margin:0;padding-left:18px;display:grid;gap:4px}
+.detail .note{font-size:12.5px;color:var(--muted);margin:0}
+.kv{width:100%;border-collapse:collapse;font-size:13px}
+.kv td,.kv th{padding:4px 0;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.kv th{font-weight:500;color:var(--muted);font-size:12px}
+.kv td.num,.kv th.num{text-align:right;font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+.mono{font-family:var(--font-mono);font-size:12.5px}
+.scroll-x{overflow-x:auto}
+.pill{display:inline-block;font-family:var(--font-mono);font-size:11px;padding:1px 7px;border-radius:99px;border:1px solid currentColor;white-space:nowrap}
+.pill.spray{color:var(--insect)} .pill.skip{color:var(--muted)} .pill.rescout{color:var(--accent)} .pill.escalate{color:var(--abiotic)}
+.pill.flag2{color:#A07A00} .pill.ok{color:var(--muted)}
+.zones{display:grid;gap:6px}
+.zone{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center;border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:#fff;text-align:left;cursor:pointer}
+.zone[aria-pressed="true"]{border-color:var(--ink);background:var(--tint)}
+.zone .sw{width:12px;height:12px;border-radius:2px}
+.zone .zn{font-size:13.5px;min-width:0}
+.zone .zn small{display:block;color:var(--muted);font-family:var(--font-mono);font-size:11px}
+pre.json{margin:0;background:var(--brand);color:#D7E8DC;border-radius:10px;padding:10px 12px;font-family:var(--font-mono);font-size:11.5px;line-height:1.5;overflow-x:auto;white-space:pre}
+.rules{display:grid;gap:4px;font-size:13px}
+.rules div{display:grid;grid-template-columns:22px minmax(0,1fr);gap:6px}
+.rules .ok{color:var(--muted)} .rules .ov{color:var(--insect);font-weight:600}
+.cta{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;background:var(--brand);color:#fff;border-radius:12px;padding:12px 14px;text-decoration:none}
+.cta b{display:block}
+.cta span{font-size:12.5px;opacity:.75}
+.cta .go{background:var(--lime);color:var(--ink);border-radius:999px;padding:6px 12px;font-weight:700;font-size:13px}
+
+.overlay{position:fixed;inset:0;background:rgba(12,48,32,.45);display:flex;justify-content:center;align-items:flex-start;padding:calc(24px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) 24px max(16px,env(safe-area-inset-left,0px));z-index:20;overflow-y:auto}
+.sheet{background:#fff;color:var(--ink);border-radius:18px;max-width:760px;width:100%;padding:22px 24px;display:grid;gap:14px;box-shadow:0 20px 60px rgba(12,48,32,.3)}
+.sheet-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.sheet h2{margin:0}
+.sheet ol{margin:0;padding-left:0;list-style:none;display:grid;gap:16px}
+.sheet li h4{margin:0 0 4px}
+.sheet li p{margin:0;font-size:15.5px;line-height:1.6;max-width:68ch}
+@media (prefers-reduced-motion: reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <a class="brand" href="index.html" aria-label="Agrivision home">
+      <svg width="38" height="38" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#0C3020" stroke-width="9.5" stroke-linecap="round"><path d="M19 50 48 23M20 67 64 25M66 42 80 29M31 74 51 55M49 75 82 45M68 75 84 60"/></g><rect x="54" y="42.5" width="11.5" height="11.5" rx="2.5" fill="#A4F80C" transform="rotate(45 59.75 48.25)"/></svg>
+      <div><b>Agrivision</b><span>Step-by-step demo · simulated field</span></div>
+    </a>
+    <div class="top-actions">
+      <button class="btn" id="btnAuto" type="button">▶ Auto-play</button>
+      <button class="btn" id="btnScript" type="button">Full script</button>
+      <a class="btn" href="index.html">← Overview</a>
+    </div>
+  </header>
+
+  <nav class="steps" id="steps" aria-label="Demo steps"></nav>
+  <div class="progress" aria-hidden="true"><i id="prog"></i></div>
+
+  <main>
+    <section class="stage" aria-label="Field map">
+      <div class="stage-head"><span id="stageLabel"></span><span id="stageHint">Click any cell to inspect it</span></div>
+      <div class="canvas-wrap"><canvas id="map" aria-label="Grid map of field F0412"></canvas><div class="tip" id="tip" hidden></div></div>
+      <div class="legend" id="legend"></div>
+      <div class="controls">
+        <div class="grp">
+          <button class="btn" id="prev" type="button">← Back</button>
+          <button class="btn" id="replay" type="button">Replay flight</button>
+        </div>
+        <button class="btn primary" id="next" type="button">Next →</button>
+      </div>
+    </section>
+
+    <aside class="panel" id="panel" aria-live="polite"></aside>
+  </main>
+</div>
+
+<div class="overlay" id="overlay" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+    <div class="sheet-head">
+      <h2 id="sheetTitle">Presenter script</h2>
+      <div class="top-actions"><button class="btn" id="copyScript" type="button">Copy script</button><button class="btn primary" id="closeScript" type="button">Close</button></div>
+    </div>
+    <p class="note" id="sheetMeta" style="margin:0;color:var(--muted);font-size:13px"></p>
+    <ol id="sheetList"></ol>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+/* ---------------- grid constants (from the PRD worked example) ---------------- */
+const COLS=48, ROWS=30, S=10, THETA=2*Math.PI/180, COS=Math.cos(THETA), SIN=Math.sin(THETA);
+const E0=447013.21, N0=4652194.91, UTM_ZONE=15;
+const ACRES_PER_CELL=100/4046.856;
+const PRICE={weed:{product:"Herbicide",usd:18},disease:{product:"Fungicide",usd:26},insect:{product:"Insecticide",usd:14}};
+const WEATHER={rain24:0.10,wind:6,windLimit:10};
+
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+const rnd=mulberry32(412);
+function gauss(){let u=0;while(!u)u=rnd();const v=rnd();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v);}
+const pad=n=>String(n).padStart(3,"0");
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const median=a=>{const s=[...a].sort((x,y)=>x-y),m=s.length>>1;return s.length%2?s[m]:(s[m-1]+s[m])/2;};
+const usd=n=>"$"+Math.round(n).toLocaleString("en-US");
+const pct=(n,d=0)=>(n*100).toFixed(d)+"%";
+
+/* ---------------- UTM -> WGS84 ---------------- */
+function utmToLatLon(E,N){
+  const a=6378137,f=1/298.257223563,k0=0.9996,e2=f*(2-f),ep2=e2/(1-e2);
+  const x=E-500000,M=N/k0,mu=M/(a*(1-e2/4-3*e2*e2/64-5*e2**3/256));
+  const e1=(1-Math.sqrt(1-e2))/(1+Math.sqrt(1-e2));
+  const p1=mu+(3*e1/2-27*e1**3/32)*Math.sin(2*mu)+(21*e1*e1/16-55*e1**4/32)*Math.sin(4*mu)+(151*e1**3/96)*Math.sin(6*mu)+(1097*e1**4/512)*Math.sin(8*mu);
+  const C1=ep2*Math.cos(p1)**2,T1=Math.tan(p1)**2,N1=a/Math.sqrt(1-e2*Math.sin(p1)**2),R1=a*(1-e2)/(1-e2*Math.sin(p1)**2)**1.5,D=x/(N1*k0);
+  const lat=p1-(N1*Math.tan(p1)/R1)*(D*D/2-(5+3*T1+10*C1-4*C1*C1-9*ep2)*D**4/24+(61+90*T1+298*C1+45*T1*T1-252*ep2-3*C1*C1)*D**6/720);
+  const lon0=((UTM_ZONE-1)*6-180+3)*Math.PI/180;
+  const lon=lon0+(D-(1+2*T1+C1)*D**3/6+(5-2*C1+28*T1-3*C1*C1+8*ep2+24*T1*T1)*D**5/120)/Math.cos(p1);
+  return [lat*180/Math.PI,lon*180/Math.PI];
+}
+/* grid corner (R,c) -> metres from origin; R counts northward, c eastward, rotated by THETA */
+const cornerM=(R,c)=>[c*S*COS-R*S*SIN, c*S*SIN+R*S*COS];
+
+/* ---------------- field geometry ---------------- */
+function inField(R,c){const r=ROWS-1-R;if(c-36>r*1.3)return false;if(R<=3&&c<=3&&(3-R)+(3-c)>=3)return false;return true;}
+const POND={R:9.5,c:41.5,rad:2.3}, WATER_BUFFER=3.0; /* cells (30 m, about 100 ft) */
+const WOODS_C1=31;
+const PATCHES=[
+  {key:"wA",type:"weed",name:"Waterhemp",R:21,c:6,rad:3.8,zeroTol:true},
+  {key:"wB",type:"weed",name:"Waterhemp",R:5,c:22,rad:1.4,hidden:true,zeroTol:true},
+  {key:"wC",type:"weed",name:"Giant ragweed",R:12,c:36,rad:2.4},
+  {key:"dz",type:"disease",name:"Frogeye leaf spot",R:9,c:12,rad:4.5},
+  {key:"in",type:"insect",name:"Stink bug feeding",edge:true,R0:24,c0:14,c1:30},
+  {key:"ab",type:"abiotic",name:"Drought stress, sandy knoll",R:17,c:30,rad:3.1},
+  {key:"un",type:"unknown",name:"Unclear leaf symptom",R:3,c:34,rad:1.0}
+];
+
+const grid=[];
+for(let R=0;R<ROWS;R++)for(let c=0;c<COLS;c++){
+  const x={R,c,i:R*COLS+c,id:`F0412-R${pad(R)}-C${pad(c)}`,in:inField(R,c),j:rnd()};
+  x.water=x.in&&Math.hypot(R+.5-POND.R,c+.5-POND.c)<POND.rad;
+  grid.push(x);
+}
+const at=(R,c)=>(R<0||c<0||R>=ROWS||c>=COLS)?null:grid[R*COLS+c];
+const crop=grid.filter(x=>x.in&&!x.water);
+const near=(x,fn)=>{for(let dR=-1;dR<=1;dR++)for(let dc=-1;dc<=1;dc++){if(!dR&&!dc)continue;fn(at(x.R+dR,x.c+dc),dR,dc);}};
+
+for(const x of crop){
+  let out=false,wet=false;
+  near(x,n=>{if(!n||!n.in)out=true;else if(n.water)wet=true;});
+  x.edge=out||wet;
+  x.edgeCtx=!x.edge?"none":(out&&x.R>=ROWS-2&&x.c<=WOODS_C1)?"woods_north":wet?"water":(out&&x.c===0)?"road":"other_crop";
+  x.pondDist=Math.hypot(x.R+.5-POND.R,x.c+.5-POND.c);
+}
+
+/* ---------------- ground truth + survey features ---------------- */
+function patchT(p,x){
+  const y=x.R+.5,xx=x.c+.5;
+  if(p.edge){
+    const tr=Math.min(1,Math.max(0,(y-p.R0)/(ROWS-p.R0))*1.25);
+    const tc=xx<p.c0?Math.max(0,1-(p.c0-xx)/2.5):xx>p.c1+1?Math.max(0,1-(xx-p.c1-1)/2.5):1;
+    return Math.min(1,tr*tc*(0.8+0.4*x.j));
+  }
+  const d=Math.hypot(y-(p.R+.5),xx-(p.c+.5));
+  return Math.max(0,1-d/(p.rad*(0.85+0.3*x.j)));
+}
+for(const x of crop){
+  let ndvi=.78+gauss()*.011,ndre=.41+gauss()*.007,std=.035*(1+gauss()*.07),inter=.006+Math.abs(gauss())*.004,therm=gauss()*.35,canopy=93+gauss()*1.4,p10x=0;
+  x.truth=null;
+  for(const p of PATCHES){
+    const t=patchT(p,x); if(t<=0)continue;
+    if(!x.truth||t>x.truth.t)x.truth={p,t};
+    switch(p.type){
+      case"weed":ndvi+=.008*t;inter+=(p.hidden?.014:.14)*t;if(!p.hidden)std*=1+.35*t;break;
+      case"disease":ndvi-=.19*t;ndre-=.09*t;std*=1+2.2*t;p10x+=.12*t;break;
+      case"insect":ndvi-=.2*t;ndre-=.08*t;std*=1+1.6*t;p10x+=.08*t;canopy-=14*t;break;
+      case"abiotic":ndvi-=.17*t;ndre-=.06*t;therm+=4.2*t;canopy-=20*t;std*=1+.6*t;break;
+      case"unknown":ndvi-=.11*t;std*=1+2*t;p10x+=.1*t;break;
+    }
+  }
+  Object.assign(x,{ndvi,ndre,std,inter,therm,canopy,p10:ndvi-1.28*std-p10x});
+}
+const F={ndvi:median(crop.map(x=>x.ndvi)),ndre:median(crop.map(x=>x.ndre)),std:median(crop.map(x=>x.std)),therm:median(crop.map(x=>x.therm)),canopy:median(crop.map(x=>x.canopy))};
+F.mad=median(crop.map(x=>Math.abs(x.ndvi-F.ndvi)));
+
+/* ---------------- survey flag thresholds (PRD table) ---------------- */
+const METRICS=[
+  {k:"ndvi_delta",get:x=>x.ndvi-F.ndvi,watch:-.08,flag:-.15,d:3},
+  {k:"ndvi_z",get:x=>(x.ndvi-F.ndvi)/(1.4826*F.mad),watch:-1.5,flag:-2.5,d:1},
+  {k:"ndvi_p10_delta",get:x=>x.p10-F.ndvi,watch:-.20,flag:-.30,d:3},
+  {k:"ndre_delta",get:x=>x.ndre-F.ndre,watch:-.04,flag:-.08,d:3},
+  {k:"ndvi_std_ratio",get:x=>x.std/F.std,watch:1.5,flag:2.5,base:1,d:2,suffix:"×"},
+  {k:"interrow_green",get:x=>x.inter,watch:.03,flag:.08,pctFmt:true},
+  {k:"canopy_cover_delta",get:x=>x.canopy-F.canopy,watch:-10,flag:-20,d:1,suffix:" pts"},
+  {k:"thermal_delta",get:x=>x.therm-F.therm,watch:1.5,flag:3.0,d:1,suffix:" °C"}
+];
+function evalMetric(m,v){
+  const b=m.base||0,dir=Math.sign(m.flag-b),xx=(v-b)*dir,w=Math.abs(m.watch-b),f=Math.abs(m.flag-b);
+  const lvl=xx>=f?2:xx>=w?1:0;
+  const s=xx<=0?0:xx<w?.5*xx/w:.5+.5*Math.min(1,(xx-w)/(f-w));
+  return{v,lvl,s};
+}
+const fmtMetric=(m,v)=>m.pctFmt?(v*100).toFixed(1)+"%":(v>0&&m.k!=="ndvi_std_ratio"?"+":"")+v.toFixed(m.d)+(m.suffix||"");
+
+for(const x of crop){
+  x.m=METRICS.map(m=>evalMetric(m,m.get(x)));
+  const watch=x.m.filter(e=>e.lvl>=1).length;
+  x.score=Math.min(1,Math.max(...x.m.map(e=>e.s))+(watch>=2?.15:0));
+  x.flagged=x.m.some(e=>e.lvl===2)||watch>=2;
+  x.reason=x.flagged?"anomaly":null;
+}
+/* edge rule: stink-bug window, inspect every cell bordering the woods */
+for(const x of crop)if(!x.reason&&x.edgeCtx==="woods_north")x.reason="edge_rule";
+/* random audit: about 4% of unflagged cells per 5 x 5 block, because healthy weeds do not lower NDVI */
+for(const x of crop)if(!x.reason&&rnd()<.04)x.reason="audit";
+const auditSeed=at(5,22); if(!auditSeed.reason)auditSeed.reason="audit";
+
+/* ---------------- inspection detections ---------------- */
+function detect(x){
+  const tr=x.truth,r=rnd();
+  if(!tr||tr.t<.12)return{diag:"healthy",conf:.84+.12*r,abiotic:.04+.06*r};
+  const t=tr.t,p=tr.p;
+  switch(p.type){
+    case"weed":return{diag:"weed",name:p.name,conf:.72+.22*t,cover:1+14*t,count:.3+6*t,abiotic:.05+.05*r,zeroTol:!!p.zeroTol,patch:p.key};
+    case"disease":return{diag:"disease",name:p.name,conf:.5+.42*t,severity:1.5+11*t,abiotic:.08+.08*r,patch:p.key};
+    case"insect":return{diag:"insect",name:p.name,conf:.62+.3*t,defol:9+24*t,abiotic:.06+.08*r,patch:p.key};
+    case"abiotic":return{diag:"abiotic",name:p.name,conf:.74+.2*t,abiotic:.78+.15*t,patch:p.key};
+    default:return{diag:"unknown",name:p.name,conf:.44+.1*r,abiotic:.3+.1*r,patch:p.key};
+  }
+}
+let insp=crop.filter(x=>x.reason);
+insp.forEach(x=>x.det=detect(x));
+/* audit hit -> inspect its neighbours on the same flight */
+for(const x of insp.filter(x=>x.reason==="audit"&&x.det.diag!=="healthy")){
+  near(x,n=>{if(n&&n.in&&!n.water&&!n.reason){n.reason="audit_expansion";n.det=detect(n);}});
+}
+insp=crop.filter(x=>x.reason);
+
+function cellDecision(x){
+  const d=x.det;
+  if(d.diag==="healthy")return{dec:"skip",why:"Inspected, no problem found."};
+  if(d.conf<.35)return{dec:"skip",why:"Confidence below 0.35, treated as absent."};
+  if(d.conf<.65)return{dec:"rescout",days:3,why:`Confidence ${d.conf.toFixed(2)} sits in the 0.35–0.65 band, so a close-up is requested.`};
+  if(d.abiotic>=.5)return{dec:"escalate",blocked:true,why:`Abiotic probability ${d.abiotic.toFixed(2)} ≥ 0.5 blocks any pesticide. Flagged for the agronomist.`};
+  if(d.diag==="weed"){
+    if(d.zeroTol)return{dec:"spray",why:`${d.name} is zero-tolerance, so any confirmed plant marks the cell.`};
+    return d.cover>=.5||d.count>=.5?{dec:"spray",why:`Weed cover ${d.cover.toFixed(1)}% is above the 0.5% line.`}:{dec:"skip",why:"Weed cover below threshold."};
+  }
+  if(d.diag==="disease"){
+    if(d.severity>=5)return{dec:"spray",why:`Lesion area ${d.severity.toFixed(1)}% is above the 5% treatment line.`};
+    if(d.severity>=2)return{dec:"rescout",days:5,why:`Lesion area ${d.severity.toFixed(1)}% is on watch (2–5%).`};
+    return{dec:"skip",why:"Lesion area under 2%."};
+  }
+  if(d.diag==="insect"){
+    if(d.defol>=20)return{dec:"spray",why:`${d.defol.toFixed(0)}% defoliation at R1 is above the 20% bloom-stage guidance.`};
+    return{dec:"rescout",days:3,why:`${d.defol.toFixed(0)}% defoliation is below the 20% line; watch this cell.`};
+  }
+  return{dec:"escalate",why:"Unclear symptom; agronomist review."};
+}
+insp.forEach(x=>x.cd=cellDecision(x));
+
+/* ---------------- zones ---------------- */
+const zones=[];
+{
+  const seen=new Set(),prob=new Set(insp.filter(x=>x.det.diag!=="healthy").map(x=>x.i));
+  for(const x of insp){
+    if(!prob.has(x.i)||seen.has(x.i))continue;
+    const comp=[],q=[x];seen.add(x.i);
+    while(q.length){const y=q.pop();comp.push(y);near(y,n=>{if(n&&prob.has(n.i)&&!seen.has(n.i)&&n.det.diag===x.det.diag){seen.add(n.i);q.push(n);}});}
+    zones.push({diag:x.det.diag,cells:comp});
+  }
+}
+const DIAG_ORDER={insect:0,disease:1,weed:2,abiotic:3,unknown:4};
+const STRAT={weed:{strategy:"spot",rings:0,days:7},disease:{strategy:"buffered_spot",rings:1,days:6},insect:{strategy:"edge_strip+buffered_spot",rings:2,days:4}};
+for(const z of zones){
+  const counts={};z.cells.forEach(x=>{counts[x.det.patch]=(counts[x.det.patch]||0)+1;});
+  z.patch=PATCHES.find(p=>p.key===Object.keys(counts).sort((a,b)=>counts[b]-counts[a])[0]);
+  z.name=z.patch.name;
+  z.conf=z.cells.reduce((s,x)=>s+x.det.conf,0)/z.cells.length;
+  z.core=z.cells.filter(x=>x.cd.dec==="spray");
+  z.rescout=z.cells.filter(x=>x.cd.dec==="rescout");
+  z.blocked=z.cells.filter(x=>x.cd.blocked);
+  z.decision=z.core.length?"spray":z.diag==="abiotic"?"escalate":z.rescout.length?"rescout":"escalate";
+  if(z.decision==="spray"){Object.assign(z,STRAT[z.diag]);}
+  else{z.strategy=null;z.rings=0;z.days=z.decision==="rescout"?3:7;}
+  z.rmin=Math.min(...z.cells.map(x=>x.R));z.rmax=Math.max(...z.cells.map(x=>x.R));
+  z.cmin=Math.min(...z.cells.map(x=>x.c));z.cmax=Math.max(...z.cells.map(x=>x.c));
+}
+zones.sort((a,b)=>(a.decision==="spray"?0:1)-(b.decision==="spray"?0:1)||DIAG_ORDER[a.diag]-DIAG_ORDER[b.diag]||b.cells.length-a.cells.length);
+zones.forEach((z,k)=>{z.id=`F0412-Z${pad(k+1)}`;z.cells.forEach(x=>x.zone=z);});
+
+/* ---------------- prescription: buffer, edge strip, water buffer, snap ---------------- */
+const rx=new Map(); /* cell index -> {prod, role, zone} */
+const clipped=new Map();
+function addRx(x,prod,role,z){if(!x||!x.in||x.water)return;if(rx.has(x.i))return;rx.set(x.i,{prod,role,zone:z});}
+for(const z of zones.filter(z=>z.decision==="spray")){
+  z.core.forEach(x=>addRx(x,z.diag,"core",z));
+  let ring=new Set(z.core.map(x=>x.i));
+  for(let k=0;k<z.rings;k++){
+    const next=new Set(ring);
+    ring.forEach(i=>near(grid[i],n=>{if(n&&n.in&&!n.water)next.add(n.i);}));
+    next.forEach(i=>addRx(grid[i],z.diag,"buffer",z));
+    ring=next;
+  }
+  if(z.diag==="insect"){
+    for(const x of crop)if(x.edgeCtx==="woods_north"||(x.R===ROWS-2&&x.c<=WOODS_C1))if(x.c>=z.cmin-4&&x.c<=z.cmax+4)addRx(x,"insect","edge",z);
+  }
+}
+for(const [i,e] of [...rx]){const x=grid[i];if(x.pondDist<=POND.rad+WATER_BUFFER){rx.delete(i);clipped.set(i,e);}}
+for(let c=0;c<COLS;c++)for(let R=1;R<ROWS-1;R++){
+  const x=at(R,c),a=rx.get(at(R-1,c).i),b=rx.get(at(R+1,c).i);
+  if(x.in&&!x.water&&!rx.has(x.i)&&!clipped.has(x.i)&&a&&b&&a.prod===b.prod&&x.pondDist>POND.rad+WATER_BUFFER)rx.set(x.i,{prod:a.prod,role:"snap",zone:a.zone});
+}
+const fieldAcres=crop.length*ACRES_PER_CELL;
+const prods=[...new Set([...rx.values()].map(e=>e.prod))].sort((a,b)=>DIAG_ORDER[a]-DIAG_ORDER[b]);
+const prodRows=prods.map(p=>{const n=[...rx.values()].filter(e=>e.prod===p).length;const ac=n*ACRES_PER_CELL;return{p,product:PRICE[p].product,cells:n,acres:ac,broad:fieldAcres*PRICE[p].usd,targ:ac*PRICE[p].usd};});
+const SAV={
+  broad:prodRows.reduce((s,r)=>s+r.broad,0),targ:prodRows.reduce((s,r)=>s+r.targ,0),
+  share:rx.size/crop.length,
+  productAvoided:0
+};
+SAV.saved=SAV.broad-SAV.targ;SAV.productAvoided=SAV.saved/SAV.broad;
+for(const z of zones){
+  const own=[...rx.values()].filter(e=>e.zone===z).length;
+  const row=prodRows.find(r=>r.p===z.diag);
+  z.rxCells=own;
+  z.clipped=[...clipped.values()].filter(e=>e.zone===z).length;
+  z.savings=row&&z.decision==="spray"?(row.broad-row.targ)*(own/row.cells):0;
+}
+
+/* ---------------- inspection route (greedy nearest neighbour) ---------------- */
+const centerM=x=>cornerM(x.R+.5,x.c+.5);
+const route=[];{
+  const left=new Set(insp);let cur=cornerM(-1.2,-1.2);route.push({pt:cur,cell:null});
+  while(left.size){let best=null,bd=1e9;for(const x of left){const p=centerM(x),d=Math.hypot(p[0]-cur[0],p[1]-cur[1]);if(d<bd){bd=d;best=x;}}left.delete(best);cur=centerM(best);route.push({pt:cur,cell:best});}
+  route.push({pt:cornerM(-1.2,-1.2),cell:null});
+  let L=0;route.forEach((r,k)=>{if(k)L+=Math.hypot(r.pt[0]-route[k-1].pt[0],r.pt[1]-route[k-1].pt[1]);r.L=L;});
+}
+const ROUTE_LEN=route[route.length-1].L;
+const INSPECT_MIN=(ROUTE_LEN/5+insp.length*6)/60;
+const BATTERIES=Math.ceil(INSPECT_MIN/22);
+
+/* ---------------- counts used by narration ---------------- */
+const N={
+  cells:crop.length, edge:crop.filter(x=>x.edge).length,
+  flagged:crop.filter(x=>x.reason==="anomaly").length,
+  edgeRule:crop.filter(x=>x.reason==="edge_rule").length,
+  audit:crop.filter(x=>x.reason==="audit").length,
+  expansion:crop.filter(x=>x.reason==="audit_expansion").length,
+  insp:insp.length,
+  problemTrue:crop.filter(x=>x.truth&&x.truth.t>.15).length,
+  lowConf:insp.filter(x=>x.det.diag!=="healthy"&&x.det.conf>=.35&&x.det.conf<.65).length,
+  blocked:insp.filter(x=>x.cd.blocked).length,
+  clipped:clipped.size,
+  spray:zones.filter(z=>z.decision==="spray").length
+};
+const byDiag=d=>insp.filter(x=>x.det.diag===d).length;
+const auditHit=insp.filter(x=>(x.reason==="audit"||x.reason==="audit_expansion")&&x.det.diag!=="healthy");
+
+/* ---------------- colours ---------------- */
+let T={};
+function readTokens(){const cs=getComputedStyle(document.documentElement);["bg","surface","ink","muted","line","tint","accent","soil","crop","woods","water","road","weed","disease","insect","abiotic","unknown","flag"].forEach(k=>T[k]=cs.getPropertyValue("--"+k).trim());}
+function rgba(hex,a){const h=hex.replace("#","");const n=parseInt(h.length===3?h.split("").map(c=>c+c).join(""):h,16);return`rgba(${n>>16&255},${n>>8&255},${n&255},${a})`;}
+const RAMP=[[.45,[158,68,38]],[.6,[210,154,53]],[.72,[181,198,87]],[.84,[61,139,56]]];
+function ndviColor(v){if(v<=RAMP[0][0])return`rgb(${RAMP[0][1]})`;for(let k=1;k<RAMP.length;k++){if(v<=RAMP[k][0]){const[a,ca]=RAMP[k-1],[b,cb]=RAMP[k],t=(v-a)/(b-a);return`rgb(${ca.map((c,i)=>Math.round(c+(cb[i]-c)*t))})`;}}return`rgb(${RAMP[RAMP.length-1][1]})`;}
+
+/* ---------------- steps ---------------- */
+const STEPS=[
+  {label:"Problem",view:"broadcast",title:"Farmers spray the whole field. The problem sits in a fraction of it.",
+   lead:"Every acre gets sprayed because nobody can see which acres need it.",
+   stats:()=>[[`${fieldAcres.toFixed(1)} ac`,"demo field"],[pct(N.problemTrue/N.cells),"of cells actually have a problem"],[usd(SAV.broad),"broadcast cost, this pass"]],
+   script:()=>`Every time a farmer sprays, they pay to cover the whole field: herbicide, fungicide, insecticide. US farms spent 21.7 billion dollars on ag chemicals in 2024. But look at this field. The dark dots are where the weeds, disease and insects actually are, about ${pct(N.problemTrue/N.cells)} of it. The magenta is what gets sprayed today: all of it. Agrivision closes that gap, and does it with the sprayer the farmer already owns.`},
+  {label:"Survey",view:"ndvi",anim:"survey",title:"One fast pass scores every cell.",
+   lead:"The field is split into permanent 10 m cells. One fast, high flight gives every cell an infrared health score.",
+   stats:()=>[[F.ndvi.toFixed(2),"field median NDVI"],[N.cells.toLocaleString(),"cells scored"],["3–5 cm/px","survey resolution"]],
+   script:()=>`We split the field once into permanent 10 by 10 meter cells, so every cell keeps its own history. Then the drone flies one fast, high-altitude survey with a multispectral camera. Every cell gets scored: NDVI, red-edge, canopy cover, how much green is growing between the rows, and canopy temperature. Green is healthy canopy. The browns and oranges are where the crop is struggling. The field median here is ${F.ndvi.toFixed(2)}, which is a healthy soybean canopy at early bloom.`},
+  {label:"Flag",view:"flag",title:"Cells are judged against their own field, not a fixed number.",
+   lead:"Cells that score well below the rest of the field get flagged. A few random cells are checked too, because healthy weeds don't lower NDVI.",
+   stats:()=>[[N.flagged,"flagged by anomaly score"],[N.edgeRule,"woods edge, stink-bug window"],[N.audit,"random audit cells"]],
+   script:()=>`We don't trust one absolute number, because NDVI shifts with crop, stage and sensor. Each cell is compared to its own field and its own history. ${N.flagged} cells cross a threshold, in yellow. It's stink-bug season, so every cell along the woods gets checked too. And because healthy weeds don't lower NDVI, we add a random audit sample, ${N.audit} cells in blue. Keep an eye on those. One of them catches something the survey missed.`},
+  {label:"Inspect",view:"inspect",anim:"inspect",title:"The second flight only visits cells that need a closer look.",
+   lead:"The drone flies low over only the flagged cells and photographs each one.",
+   stats:()=>[[N.insp,"cells inspected"],[pct(N.insp/N.cells),"of the field"],[`${(ROUTE_LEN/1000).toFixed(1)} km`,`route, about ${Math.round(INSPECT_MIN)} min`]],
+   script:()=>`Second flight. Instead of imaging every square meter at low altitude, the drone visits only the ${N.insp} cells that need a closer look, ${pct(N.insp/N.cells)} of the field, at 8 to 15 meters, half a centimeter per pixel. The route is solved like a delivery problem: shortest path, battery swaps planned in advance. About ${Math.round(INSPECT_MIN)} minutes of flying. When that audit cell turned up weeds, the drone checked its neighbors on the same flight.`},
+  {label:"Detect",view:"detect",title:"Our vision model says what is wrong in each cell.",
+   lead:"Our trained model labels each photo: weeds, disease, insects or drought.",
+   stats:()=>[[byDiag("weed"),"weed cells"],[byDiag("disease")+byDiag("insect"),"disease + insect cells"],[byDiag("abiotic"),"abiotic stress cells"]],
+   script:()=>`Our classifier, built from over 32,000 labeled crop photos, labels every inspected cell. Here it found waterhemp in the north-west, frogeye leaf spot in the south-west, stink-bug feeding along the woods, and a hot, thin patch on a sandy knoll. That last one matters: it's drought, and no pesticide fixes drought. Spraying it would be pure waste, so the model has a dedicated dehydration class. And remember the audit cell: it found a small waterhemp patch that looked perfectly normal from the air.`},
+  {label:"Decide",view:"decide",title:"An agent proposes. The rules engine decides.",
+   lead:"The agent decides spray, skip or re-scout for each problem zone. Safety rules in code can overrule it.",
+   stats:()=>[[zones.length,"zones found"],[N.spray,"zones to spray"],[N.blocked+N.lowConf+N.clipped,"cells overridden by rules"]],
+   script:()=>`Detection is not a decision. A Gemma 4 agent reads each zone: the economic threshold, the crop stage, how far the pest moves, and the weather. It proposes spray, skip, re-scout or escalate, with a reason a farmer can read. Then a rules engine in plain code gets the final say. On this field it blocked pesticide on the drought knoll, cut ${N.clipped} ${N.clipped===1?"cell":"cells"} inside the pond buffer, and sent ${N.lowConf} low-confidence cells back for a close-up. The language model never sets a product or a rate on its own.`},
+  {label:"Prescribe",view:"rx",title:"",
+   lead:"The farmer gets one map. Their sprayer turns on only over the colored cells.",
+   stats:()=>[[pct(SAV.share),"of the field sprayed"],[usd(SAV.saved),"saved on this pass"],[pct(1-SAV.share),"of the field never sprayed"]],
+   script:()=>`Each zone gets a buffer based on how far the pest moves: none for weeds, one ring for disease, two rings plus an edge strip along the woods for stink bugs. Then it's snapped to sprayer passes and exported as a shapefile, an ISOXML task, or a spray-drone map. The bottom line on this field: spray ${pct(SAV.share)} of it and skip the rest. That's ${usd(SAV.saved)} saved on this single pass, and ${pct(1-SAV.share)} of the field never sees a nozzle, on equipment the farmer already owns.`}
+];
+STEPS.find(s=>s.view==="rx").title=`Spray ${pct(SAV.share)} of this field. Skip the rest.`;
+
+/* ---------------- state ---------------- */
+let scriptOpen=false;
+const state={step:0,sel:at(17,43),zone:zones[0],anim:{p:1}};
+const RM=matchMedia("(prefers-reduced-motion: reduce)").matches;
+try{const h=location.hash.replace("#step","");if(/^[1-7]$/.test(h))state.step=+h-1;}catch(e){}
+
+/* ---------------- canvas ---------------- */
+const cv=document.getElementById("map"),ctx=cv.getContext("2d"),tip=document.getElementById("tip");
+const G={k:1,ox:0,oy:0,W:0,H:0};
+function layout(){
+  const W=cv.parentElement.clientWidth;
+  const pts=[[-1.6,-1.8],[ROWS+2.4,-1.8],[-1.6,COLS+.6],[ROWS+2.4,COLS+.6]].map(([R,c])=>cornerM(R,c));
+  const minE=Math.min(...pts.map(p=>p[0])),maxE=Math.max(...pts.map(p=>p[0])),minN=Math.min(...pts.map(p=>p[1])),maxN=Math.max(...pts.map(p=>p[1]));
+  let k=W/(maxE-minE);const maxH=Math.max(300,innerHeight*.7);if((maxN-minN)*k>maxH)k=maxH/(maxN-minN);
+  const H=Math.round((maxN-minN)*k);
+  G.k=k;G.W=W;G.H=H;G.ox=-minE*k+(W-(maxE-minE)*k)/2;G.oy=maxN*k;
+  const dpr=Math.min(2,devicePixelRatio||1);
+  cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr);cv.style.height=H+"px";ctx.setTransform(dpr,0,0,dpr,0,0);
+  for(const x of grid){x.px=[[x.R,x.c],[x.R,x.c+1],[x.R+1,x.c+1],[x.R+1,x.c]].map(([R,c])=>toPx(...cornerM(R,c)));const m=toPx(...centerM(x));x.cx=m[0];x.cy=m[1];}
+}
+const toPx=(e,n)=>[G.ox+e*G.k,G.oy-n*G.k];
+function cellPath(x){ctx.beginPath();ctx.moveTo(...x.px[0]);for(let k=1;k<4;k++)ctx.lineTo(...x.px[k]);ctx.closePath();}
+function fillCell(x,col){cellPath(x);ctx.fillStyle=col;ctx.fill();}
+function strokeCell(x,col,w,dash){cellPath(x);ctx.strokeStyle=col;ctx.lineWidth=w;ctx.setLineDash(dash||[]);ctx.stroke();ctx.setLineDash([]);}
+function crossCell(x,col){const[a,b,c,d]=x.px;ctx.beginPath();ctx.moveTo(...a);ctx.lineTo(...c);ctx.moveTo(...b);ctx.lineTo(...d);ctx.strokeStyle=col;ctx.lineWidth=1.3;ctx.stroke();}
+const MONO=()=>getComputedStyle(document.documentElement).getPropertyValue("--font-mono");
+function pill(text,x,y,bg,fg){ctx.font="600 10.5px "+MONO();const w=ctx.measureText(text).width+10;ctx.fillStyle=bg;ctx.beginPath();ctx.roundRect?ctx.roundRect(x-w/2,y-8,w,16,8):ctx.rect(x-w/2,y-8,w,16);ctx.fill();ctx.fillStyle=fg;ctx.textAlign="center";ctx.textBaseline="middle";ctx.fillText(text,x,y+.5);}
+
+function drawSurroundings(){
+  /* woods along the north boundary */
+  const wr=mulberry32(7);
+  for(let c=-.5;c<=WOODS_C1+1.2;c+=.55){
+    const R=ROWS+.55+wr()*1.3,[x,y]=toPx(...cornerM(R,c)),r=G.k*S*(.45+wr()*.35);
+    ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fillStyle=rgba(T.woods,.75+wr()*.25);ctx.fill();
+  }
+  /* county road on the west side */
+  const a=toPx(...cornerM(-1.6,-1.25)),b=toPx(...cornerM(ROWS+.3,-1.25)),c2=toPx(...cornerM(ROWS+.3,-.45)),d=toPx(...cornerM(-1.6,-.45));
+  ctx.beginPath();ctx.moveTo(...a);ctx.lineTo(...b);ctx.lineTo(...c2);ctx.lineTo(...d);ctx.closePath();ctx.fillStyle=T.road;ctx.fill();
+  ctx.fillStyle=T.muted;ctx.font="11px "+MONO();ctx.textAlign="left";ctx.textBaseline="alphabetic";
+  const wl=toPx(...cornerM(ROWS+2.05,WOODS_C1+1.8));ctx.fillText("Woods",wl[0],wl[1]);
+  const pl=toPx(...cornerM(POND.R-3.6,POND.c-1.3));ctx.fillText("Pond",pl[0],pl[1]);
+  const rl=toPx(...cornerM(-1.45,-1.3));ctx.fillText("County road",rl[0],rl[1]+12);
+  const nl=toPx(...cornerM(ROWS+1.6,COLS-.6));ctx.textAlign="center";ctx.fillStyle=T.ink;ctx.font="600 12px "+MONO();ctx.fillText("N ↑",nl[0],nl[1]);
+}
+function drawBoundary(){
+  ctx.strokeStyle=T.ink;ctx.lineWidth=1.6;ctx.beginPath();
+  for(const x of grid){if(!x.in)continue;const sides=[[x.R-1,x.c,0,1],[x.R,x.c+1,1,2],[x.R+1,x.c,2,3],[x.R,x.c-1,3,0]];
+    for(const[R,c,a,b]of sides){const n=at(R,c);if(!n||!n.in){ctx.moveTo(...x.px[a]);ctx.lineTo(...x.px[b]);}}}
+  ctx.stroke();
+}
+function gridLines(alpha,blocks){
+  ctx.strokeStyle=rgba(T.ink,alpha);ctx.lineWidth=.6;ctx.beginPath();
+  for(const x of grid){if(!x.in)continue;ctx.moveTo(...x.px[0]);ctx.lineTo(...x.px[1]);ctx.lineTo(...x.px[2]);}
+  ctx.stroke();
+  if(blocks){ctx.strokeStyle=rgba(T.ink,.45);ctx.lineWidth=1.2;ctx.beginPath();
+    for(const x of grid){if(!x.in)continue;if(x.c%5===0){ctx.moveTo(...x.px[0]);ctx.lineTo(...x.px[3]);}if(x.R%5===0){ctx.moveTo(...x.px[0]);ctx.lineTo(...x.px[1]);}}ctx.stroke();}
+}
+function drawDrone(x,y,heading){
+  ctx.save();ctx.translate(x,y);ctx.rotate(heading||0);
+  ctx.strokeStyle=T.ink;ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(-7,-7);ctx.lineTo(7,7);ctx.moveTo(7,-7);ctx.lineTo(-7,7);ctx.stroke();
+  for(const[a,b]of[[-7,-7],[7,7],[7,-7],[-7,7]]){ctx.beginPath();ctx.arc(a,b,4.2,0,Math.PI*2);ctx.fillStyle=rgba(T.surface,.9);ctx.fill();ctx.strokeStyle=T.ink;ctx.lineWidth=1.3;ctx.stroke();}
+  ctx.beginPath();ctx.arc(0,0,3.6,0,Math.PI*2);ctx.fillStyle="#A4F80C";ctx.fill();ctx.strokeStyle=T.ink;ctx.lineWidth=1;ctx.stroke();ctx.restore();
+}
+const DCOL=d=>T[d]||T.unknown;
+
+function render(){
+  const v=STEPS[state.step].view,p=state.anim.p;
+  ctx.clearRect(0,0,G.W,G.H);
+  drawSurroundings();
+  for(const x of grid)if(x.water)fillCell(x,T.water);
+  const dim=rgba(T.surface,.62);
+
+  if(v==="broadcast"){
+    for(const x of crop)fillCell(x,rgba(T.insect,.55));
+    gridLines(.06);
+    for(const x of crop)if(x.truth&&x.truth.t>.15){ctx.beginPath();ctx.arc(x.cx,x.cy,Math.max(2,G.k*S*.18),0,Math.PI*2);ctx.fillStyle=T.ink;ctx.fill();}
+  }
+  else if(v==="grid"){
+    for(const x of crop)fillCell(x,x.edge?rgba(T.flag,.22):T.crop);
+    gridLines(.22,true);
+  }
+  else if(v==="ndvi"){
+    const rows=p*ROWS,done=Math.floor(rows),frac=rows-done;
+    for(const x of crop){
+      const shown=x.R<done||(x.R===done&&(done%2===0?x.c<frac*COLS:x.c>=(1-frac)*COLS));
+      fillCell(x,shown?ndviColor(x.ndvi):T.crop);
+    }
+    gridLines(.07);
+    if(p<1){
+      const R=done+.5,c=done%2===0?frac*COLS:(1-frac)*COLS,[dx,dy]=toPx(...cornerM(R,c));
+      const sw=G.k*S*1.6;ctx.fillStyle="rgba(164,248,12,.22)";ctx.fillRect(dx-sw*1.2,dy-sw/2,sw*2.4,sw);
+      drawDrone(dx,dy,Math.PI/4);
+    }
+  }
+  else if(v==="flag"){
+    for(const x of crop){fillCell(x,ndviColor(x.ndvi));fillCell(x,dim);}
+    gridLines(.06);
+    for(const x of crop){
+      if(x.reason==="anomaly"){fillCell(x,rgba(T.flag,.35+.6*x.score));strokeCell(x,T.flag,1.2);}
+      else if(x.reason==="edge_rule")strokeCell(x,T.flag,1.4,[3,2]);
+      else if(x.reason==="audit"){fillCell(x,rgba(T.accent,.28));strokeCell(x,T.accent,1.6,[3,2]);}
+    }
+  }
+  else if(v==="inspect"){
+    for(const x of crop){fillCell(x,ndviColor(x.ndvi));fillCell(x,rgba(T.surface,.72));}
+    gridLines(.06);
+    const Ld=p*ROUTE_LEN;
+    for(const r of route)if(r.cell){const vis=r.L<=Ld;if(vis)fillCell(r.cell,rgba(T.accent,.55));strokeCell(r.cell,rgba(T.accent,vis?1:.6),1);}
+    ctx.beginPath();let px0=null;
+    for(let k=0;k<route.length;k++){const r=route[k];const[x,y]=toPx(...r.pt);
+      if(r.L<=Ld){if(!k)ctx.moveTo(x,y);else ctx.lineTo(x,y);}
+      else{const prev=route[k-1],t=(Ld-prev.L)/(r.L-prev.L),pt=[prev.pt[0]+(r.pt[0]-prev.pt[0])*t,prev.pt[1]+(r.pt[1]-prev.pt[1])*t];const q=toPx(...pt);ctx.lineTo(...q);px0=[q,Math.atan2(-(r.pt[1]-prev.pt[1]),r.pt[0]-prev.pt[0])];break;}}
+    ctx.strokeStyle=rgba(T.ink,.75);ctx.lineWidth=1.1;ctx.stroke();
+    if(px0&&p<1)drawDrone(px0[0][0],px0[0][1],px0[1]+Math.PI/4);
+    const home=toPx(...route[0].pt);ctx.beginPath();ctx.arc(home[0],home[1],5,0,Math.PI*2);ctx.fillStyle=T.ink;ctx.fill();
+  }
+  else if(v==="detect"){
+    for(const x of crop)fillCell(x,T.crop);
+    gridLines(.08);
+    for(const x of insp){
+      if(x.det.diag==="healthy"){strokeCell(x,rgba(T.ink,.45),1);continue;}
+      fillCell(x,rgba(DCOL(x.det.diag),.35+.65*clamp((x.det.conf-.3)/.6,0,1)));
+    }
+    for(const x of auditHit)strokeCell(x,T.accent,2);
+  }
+  else if(v==="decide"){
+    for(const x of crop)fillCell(x,T.crop);
+    gridLines(.08);
+    for(const z of zones){
+      for(const x of z.cells){
+        const col=DCOL(z.diag);
+        if(x.cd.dec==="spray"){fillCell(x,clipped.has(x.i)?rgba(col,.3):col);if(clipped.has(x.i))crossCell(x,T.ink);}
+        else if(x.cd.dec==="rescout"){fillCell(x,rgba(col,.18));strokeCell(x,col,1.4,[2.5,2]);}
+        else if(x.cd.dec==="escalate"){fillCell(x,rgba(col,.4));crossCell(x,rgba(T.ink,.8));}
+      }
+    }
+    if(state.zone){const z=state.zone;for(const x of z.cells)strokeCell(x,T.ink,2);}
+    for(const z of zones){if(z.cells.length<3)continue;const cx=z.cells.reduce((s,x)=>s+x.cx,0)/z.cells.length,cy=z.cells.reduce((s,x)=>s+x.cy,0)/z.cells.length;pill(z.id.slice(-4),cx,cy-G.k*S*(z.diag==="insect"?1.6:0),T.ink,"#A4F80C");}
+  }
+  else if(v==="rx"||v==="verify"){
+    for(const x of crop)fillCell(x,T.soil);
+    for(const[i,e]of rx){const x=grid[i];fillCell(x,rgba(DCOL(e.prod),v==="verify"?.25:e.role==="core"?1:e.role==="snap"?.5:.68));}
+    for(const[i]of clipped){const x=grid[i];crossCell(x,rgba(T.ink,.6));}
+    gridLines(.07);
+    if(v==="rx"){ctx.strokeStyle=rgba(T.ink,.35);ctx.lineWidth=1;ctx.setLineDash([4,3]);ctx.beginPath();
+      for(let c=0;c<=COLS;c+=3){const a=toPx(...cornerM(0,c)),b=toPx(...cornerM(ROWS,c));ctx.moveTo(...a);ctx.lineTo(...b);}ctx.stroke();ctx.setLineDash([]);}
+    else{
+      for(const x of crop){const d=rescoutDays(x);if(d==null)continue;const col=d<=4?T.accent:d<=6?rgba(T.accent,.55):rgba(T.accent,.25);strokeCell(x,col,d<=4?1.8:1.3);if(d<=4)fillCell(x,rgba(T.accent,.25));}
+    }
+  }
+  drawBoundary();
+  if(state.sel&&state.sel.in){strokeCell(state.sel,T.bg,4);strokeCell(state.sel,T.ink,2);}
+}
+function rescoutDays(x){
+  const e=rx.get(x.i);if(e)return e.zone.days;
+  if(x.cd&&x.cd.dec==="rescout")return x.cd.days;
+  if(x.cd&&x.cd.dec==="escalate")return 7;
+  return null;
+}
+
+/* ---------------- animation ---------------- */
+let raf=0;
+function play(){
+  const kind=STEPS[state.step].anim;cancelAnimationFrame(raf);
+  if(!kind||RM){state.anim={p:1};render();return;}
+  const dur=kind==="survey"?4200:6500,t0=performance.now();
+  const tick=now=>{state.anim={p:Math.min(1,(now-t0)/dur)};render();if(state.anim.p<1)raf=requestAnimationFrame(tick);};
+  raf=requestAnimationFrame(tick);
+}
+
+/* ---------------- panel ---------------- */
+const $=id=>document.getElementById(id);
+const sw=col=>`<i style="background:${col}"></i>`;
+function legendFor(v){
+  const L={
+    broadcast:[[sw(rgba(T.insect,.55)),"Sprayed today (broadcast)"],[`<i style="background:${T.ink};border-radius:50%;width:8px;height:8px"></i>`,"Where problems actually are"]],
+    grid:[[sw(T.crop),"Cell, 10 × 10 m"],[sw(rgba(T.flag,.4)),"Edge cell"],[`<i class="ring" style="border-color:${T.ink};border-style:solid"></i>`,"Block, 5 × 5 cells"],[sw(T.woods),"Woods"],[sw(T.water),"Pond"]],
+    ndvi:[[`NDVI 0.45<span class="ramp"></span>0.84`,""]],
+    flag:[[sw(T.flag),"Flagged, shade = anomaly score"],[`<i class="ring" style="border-color:${T.flag}"></i>`,"Woods edge rule"],[`<i class="ring" style="border-color:${T.accent}"></i>`,"Random audit sample"]],
+    inspect:[[`<i class="ring" style="border-color:${T.accent};border-style:solid"></i>`,"Cell on inspection route"],[sw(rgba(T.accent,.55)),"Inspected"],[`<i style="background:${T.ink};border-radius:50%"></i>`,"Launch point"]],
+    detect:[[sw(T.weed),"Weed"],[sw(T.disease),"Disease symptom"],[sw(T.insect),"Insect damage"],[sw(T.abiotic),"Dehydrated / abiotic"],[sw(T.unknown),"Unclear"],[`<i class="ring" style="border-color:${T.accent};border-style:solid"></i>`,"Found by audit"]],
+    decide:[[sw(T.insect),"Spray (color = problem)"],[`<i class="ring" style="border-color:${T.disease}"></i>`,"Re-scout / close-up"],[sw(rgba(T.abiotic,.4)),"Escalate, pesticide blocked (×)"],[sw(rgba(T.weed,.3)),"Cut by pond buffer (×)"]],
+    rx:[...prodRows.map(r=>[sw(DCOL(r.p)),r.product]),[sw(rgba(T.insect,.6)),"Lighter = buffer, edge strip or snap"],[sw(T.soil),"Sprayer off"],[`<i class="ring" style="border-color:${T.ink}"></i>`,"30 m sprayer pass"]],
+    verify:[[sw(rgba(T.accent,.4)),"Re-scout in 3–4 days"],[`<i class="ring" style="border-color:${rgba(T.accent,.55)};border-style:solid"></i>`,"5–6 days"],[`<i class="ring" style="border-color:${rgba(T.accent,.3)};border-style:solid"></i>`,"Next scheduled flight"]]
+  }[v];
+  $("legend").innerHTML=L.map(([a,b])=>`<span>${a}${b}</span>`).join("");
+}
+const REASON_TXT={anomaly:"anomaly score",edge_rule:"woods edge rule",audit:"random audit",audit_expansion:"audit hit, neighbor"};
+const DIAG_TXT={healthy:"Healthy",weed:"Weed",disease:"Disease symptom",insect:"Insect damage",abiotic:"Dehydrated / abiotic",unknown:"Unclear"};
+const DEC_TXT={spray:"spray",skip:"skip",rescout:"re-scout",escalate:"escalate"};
+
+function cellCard(x,mode){
+  if(!x||!x.in)return`<p class="note">Click a cell on the map to inspect it.</p>`;
+  if(x.water)return`<h3>${x.id}</h3><p class="note">Water. Masked out of crop statistics (NDVI below 0).</p>`;
+  const rows=[];
+  if(mode==="geo"){
+    const corners=[["SW",x.R,x.c],["SE",x.R,x.c+1],["NE",x.R+1,x.c+1],["NW",x.R+1,x.c],["Centroid",x.R+.5,x.c+.5]];
+    return`<h3>Cell ${x.id}</h3>
+    <div class="scroll-x"><table class="kv"><thead><tr><th>Point</th><th class="num">UTM E</th><th class="num">UTM N</th><th class="num">Lat</th><th class="num">Lon</th></tr></thead><tbody>
+    ${corners.map(([n,R,c])=>{const[e,nn]=cornerM(R,c);const E=E0+e,Nn=N0+nn,[la,lo]=utmToLatLon(E,Nn);return`<tr><td>${n}</td><td class="num">${E.toFixed(2)}</td><td class="num">${Nn.toFixed(2)}</td><td class="num">${la.toFixed(7)}</td><td class="num">${lo.toFixed(7)}</td></tr>`;}).join("")}
+    </tbody></table></div>
+    <p class="note">UTM zone 15N (EPSG:32615), origin E₀ 447,013.21 / N₀ 4,652,194.91, row heading θ = 2°, s = 10 m. Stored in WGS84 to 7 decimals (about 1 cm). Edge: ${x.edge?x.edgeCtx.replace("_"," "):"no"}.</p>`;
+  }
+  if(mode==="metrics"||mode==="flag"){
+    return`<h3>Cell ${x.id}${x.reason?` · <span class="pill flag2">${REASON_TXT[x.reason]}</span>`:""}</h3>
+    <div class="scroll-x"><table class="kv"><thead><tr><th>Metric</th><th class="num">Value</th><th class="num">Watch</th><th class="num">Flag</th><th class="num">Level</th></tr></thead><tbody>
+    ${METRICS.map((m,k)=>{const e=x.m[k];return`<tr><td class="mono">${m.k}</td><td class="num">${fmtMetric(m,e.v)}</td><td class="num">${fmtMetric(m,m.watch)}</td><td class="num">${fmtMetric(m,m.flag)}</td><td class="num">${e.lvl===2?'<span class="pill spray">flag</span>':e.lvl===1?'<span class="pill flag2">watch</span>':"–"}</td></tr>`;}).join("")}
+    </tbody></table></div>
+    <p class="note">Cell NDVI ${x.ndvi.toFixed(3)} vs field median ${F.ndvi.toFixed(3)}. anomaly_score <b>${x.score.toFixed(2)}</b>${x.flagged?", flagged.":", not flagged."} ${x.reason==="audit"?"Picked for the random audit sample anyway.":""}</p>`;
+  }
+  if(!x.det)return`<h3>Cell ${x.id}</h3><p class="note">Not inspected this visit. Survey anomaly score ${x.score.toFixed(2)}, below the flag line, so no low-altitude flight time was spent here.</p>`;
+  const d=x.det;
+  rows.push(["Why inspected",REASON_TXT[x.reason]],["Diagnosis",DIAG_TXT[d.diag]+(d.name?` · ${d.name}`:"")],["cell_conf",d.conf.toFixed(2)]);
+  if(d.cover!=null)rows.push(["weed_cover_pct",d.cover.toFixed(1)+"%"],["weed_count_m2",d.count.toFixed(1)]);
+  if(d.severity!=null)rows.push(["disease_severity_pct",d.severity.toFixed(1)+"%"]);
+  if(d.defol!=null)rows.push(["defoliation_pct",d.defol.toFixed(0)+"%"]);
+  rows.push(["abiotic_prob",d.abiotic.toFixed(2)]);
+  if(mode==="decide"||mode==="rx"){
+    rows.push(["Cell decision",`<span class="pill ${x.cd.dec}">${DEC_TXT[x.cd.dec]}</span>`]);
+    if(clipped.has(x.i))rows.push(["Rules engine",`<span class="pill spray">removed: pond buffer</span>`]);
+  }
+  return`<h3>Cell ${x.id}</h3><table class="kv"><tbody>${rows.map(([a,b])=>`<tr><td>${a}</td><td class="num">${b}</td></tr>`).join("")}</tbody></table>${mode==="decide"||mode==="rx"?`<p class="note">${x.cd.why}</p>`:""}`;
+}
+
+function agentJSON(z){
+  const avg=(k)=>z.cells.reduce((s,x)=>s+(x.det[k]||0),0)/z.cells.length;
+  const reason={
+    insect:`${avg("defol").toFixed(0)}% average defoliation at R1, above the 20% bloom-stage line, entering from the north woods. Spray a 2-ring buffer plus an edge strip along the woods; re-scout in 4 days.`,
+    disease:`Frogeye leaf spot on ${z.core.length} cells above the 5% lesion line. Spray with a 1-ring buffer. ${z.rescout.length} fringe cells go to a close-up first.`,
+    weed:`${z.name}${z.patch.zeroTol?" is zero-tolerance":" above 0.5 plants per m²"}: spot-spray ${z.core.length} cells, no buffer for weeds.${z.patch.hidden?" Found by the random audit sample; NDVI looked normal.":""}${z.clipped?` ${z.clipped} ${z.clipped===1?"cell sits":"cells sit"} inside the pond buffer and ${z.clipped===1?"is":"are"} dropped.`:""}`,
+    abiotic:`Hot, thin canopy (+${(z.cells.reduce((s,x)=>s+x.therm-F.therm,0)/z.cells.length).toFixed(1)} °C). Likely drought on the knoll, not a pest. No pesticide; flag for the agronomist.`,
+    unknown:`Symptom unclear at confidence ${z.conf.toFixed(2)}. Request a close-up before any decision.`
+  }[z.diag];
+  return JSON.stringify({
+    zone_id:z.id,diagnosis:z.diag==="weed"?`weed:${z.name.toLowerCase()}`:z.diag==="insect"?"insect_damage":z.diag==="abiotic"?"abiotic_stress":z.diag==="disease"?"disease":"unknown",
+    confidence:+z.conf.toFixed(2),decision:z.decision==="rescout"?"re-scout":z.decision,
+    strategy:z.strategy,buffer_rings:z.rings,rescout_in_days:z.days,
+    reason,estimated_savings_usd:Math.round(z.savings)
+  },null,2);
+}
+function rulesFor(z){
+  const r=[];
+  r.push([true,"Label rate, seasonal max, pre-harvest interval: within limits"]);
+  r.push([true,`Weather: rain 24 h ${pct(WEATHER.rain24)}, wind ${WEATHER.wind} mph (limit ${WEATHER.windLimit})`]);
+  if(z.diag==="abiotic")r.push([false,`Abiotic diagnosis: pesticide recommendation blocked`]);
+  if(z.rescout.length)r.push([false,`${z.rescout.length} cells below 0.65 confidence or under threshold: re-scout, never spray`]);
+  if(z.clipped)r.push([false,`${z.clipped} ${z.clipped===1?"cell":"cells"} inside the 30 m pond buffer removed`]);
+  r.push([true,`Treated share ${pct(SAV.share)} < 60%: stay targeted, no broadcast`]);
+  return`<div class="rules">${r.map(([ok,t])=>`<div class="${ok?"ok":"ov"}"><span>${ok?"✓":"⛔"}</span><span>${t}</span></div>`).join("")}</div>`;
+}
+
+function detailFor(i){
+  const x=state.sel;
+  switch(STEPS[i].view){
+    case"flag":{
+      if(!x||!x.in||x.water)return"";
+      const d=x.ndvi-F.ndvi;
+      return`<p class="note">Selected cell <span class="mono">${x.id}</span>: NDVI ${x.ndvi.toFixed(2)} (${d>=0?"+":""}${d.toFixed(2)} vs field) · ${x.reason?`<span class="pill flag2">${REASON_TXT[x.reason]}</span>`:"not flagged"}</p>`;
+    }
+    case"detect":return`<a class="cta" href="index.html#lab"><span><b>Try our classifier on a real photo</b><span>Pick a weed, disease, insect or dry-leaf image and watch the model label it.</span></span><span class="go">Open →</span></a>${x&&x.det?`<p class="note">Selected cell <span class="mono">${x.id}</span>: ${DIAG_TXT[x.det.diag]}${x.det.name?` (${x.det.name})`:""}, confidence ${x.det.conf.toFixed(2)}</p>`:""}`;
+    case"decide":{
+      const z=state.zone;
+      return`<div class="zones">${zones.map(q=>`<button type="button" class="zone" data-zone="${q.id}" aria-pressed="${q===z}"><span class="sw" style="background:${DCOL(q.diag)}"></span><span class="zn">${q.name}<small>${q.cells.length} cells</small></span><span class="pill ${q.decision}">${DEC_TXT[q.decision]}</span></button>`).join("")}</div>
+      ${z?`<p style="margin:0">${JSON.parse(agentJSON(z)).reason}</p><details class="script"><summary>Agent JSON + rules engine</summary><pre class="json" style="margin-top:8px">${agentJSON(z)}</pre><div style="margin-top:8px">${rulesFor(z)}</div></details>`:""}`;
+    }
+    case"rx":return`<p class="note">Exports to any sprayer display (Shapefile, ISOXML) or spray drone (KML). Prices illustrative; field simulated.</p>`;
+    default:return"";
+  }
+}
+function renderSteps(){
+  $("steps").innerHTML=STEPS.map((s,k)=>`<button type="button" data-step="${k}" ${k===state.step?'aria-current="step"':""} class="${k<state.step?"done":""}"><span class="n">${k+1}</span>${s.label}</button>`).join("");
+  $("prog").style.width=((state.step+1)/STEPS.length*100)+"%";
+  const cur=$("steps").querySelector('[aria-current="step"]');if(cur&&cur.scrollIntoView)cur.scrollIntoView({block:"nearest",inline:"nearest"});
+}
+function renderPanel(){
+  const s=STEPS[state.step];
+  $("panel").innerHTML=`<div><div class="kicker">Step ${state.step+1} of ${STEPS.length} · ${s.label}</div><h2>${s.title}</h2></div>
+  <p class="lead">${s.lead}</p>
+  <div class="stats">${s.stats().map(([v,l])=>`<div class="stat"><div class="v">${v}</div><div class="l">${l}</div></div>`).join("")}</div>
+  <details class="script"${scriptOpen?" open":""}><summary>Presenter script</summary><p>${s.script()}</p></details>
+  <div class="detail">${detailFor(state.step)}</div>`;
+  $("stageLabel").textContent=`${s.label.toUpperCase()} · ${({broadcast:"broadcast baseline",grid:"field grid",ndvi:"survey pass, NDVI",flag:"flags + audit",inspect:"inspection pass",detect:"detections",decide:"zone decisions",rx:"prescription map",verify:"re-scout plan"})[s.view]}`;
+  $("prev").disabled=state.step===0;$("next").disabled=state.step===STEPS.length-1;
+  $("replay").hidden=!s.anim;
+}
+const DEFAULT_SEL=[null,at(12,9),at(12,9),null,auditSeed,null,null];
+function go(k){
+  state.step=clamp(k,0,STEPS.length-1);
+  if(DEFAULT_SEL[state.step])state.sel=DEFAULT_SEL[state.step];
+  if(STEPS[state.step].view==="decide"&&state.sel&&state.sel.zone)state.zone=state.sel.zone;
+  try{history.replaceState(null,"","#step"+(state.step+1));}catch(e){}
+  renderSteps();legendFor(STEPS[state.step].view);renderPanel();
+  state.anim={p:STEPS[state.step].anim&&!RM?0:1};play();
+}
+
+/* ---------------- auto-play ---------------- */
+let autoTimer=0;
+function stopAuto(){clearTimeout(autoTimer);autoTimer=0;$("btnAuto").textContent="▶ Auto-play";$("btnAuto").classList.remove("on");}
+function autoStep(){
+  const s=STEPS[state.step];
+  const wait=(s.anim&&!RM?(s.anim==="survey"?4200:6500):0)+Math.max(5000,s.script().split(/\s+/).length*60);
+  autoTimer=setTimeout(()=>{if(state.step>=STEPS.length-1){stopAuto();return;}go(state.step+1);autoStep();},wait);
+}
+$("btnAuto").onclick=()=>{if(autoTimer){stopAuto();return;}$("btnAuto").textContent="❚❚ Pause";$("btnAuto").classList.add("on");if(state.step>=STEPS.length-1)go(0);autoStep();};
+
+/* ---------------- events ---------------- */
+function hit(ev){
+  const r=cv.getBoundingClientRect(),px=ev.clientX-r.left,py=ev.clientY-r.top;
+  const e=(px-G.ox)/G.k,n=(G.oy-py)/G.k,c=Math.floor((e*COS+n*SIN)/S),R=Math.floor((-e*SIN+n*COS)/S);
+  return{cell:at(R,c),px,py};
+}
+cv.addEventListener("click",ev=>{const{cell}=hit(ev);if(!cell||!cell.in)return;state.sel=cell;if(cell.zone)state.zone=cell.zone;renderPanel();render();});
+cv.addEventListener("mousemove",ev=>{const{cell,px,py}=hit(ev);if(!cell||!cell.in){tip.hidden=true;return;}tip.hidden=false;tip.style.left=Math.min(px,G.W-170)+"px";tip.style.top=py+"px";tip.textContent=cell.id+(cell.water?" · water":"");});
+cv.addEventListener("mouseleave",()=>tip.hidden=true);
+$("steps").addEventListener("click",e=>{const b=e.target.closest("[data-step]");if(b){stopAuto();go(+b.dataset.step);}});
+$("panel").addEventListener("toggle",e=>{if(e.target.classList&&e.target.classList.contains("script"))scriptOpen=e.target.open;},true);
+$("panel").addEventListener("click",e=>{const b=e.target.closest("[data-zone]");if(!b)return;state.zone=zones.find(z=>z.id===b.dataset.zone);state.sel=state.zone.core[0]||state.zone.cells[0];renderPanel();render();});
+$("prev").onclick=()=>{stopAuto();go(state.step-1);};$("next").onclick=()=>{stopAuto();go(state.step+1);};$("replay").onclick=()=>{state.anim={p:0};play();};
+document.addEventListener("keydown",e=>{
+  if(!$("overlay").hidden){if(e.key==="Escape")closeSheet();return;}
+  if(e.target.closest&&e.target.closest("input,textarea"))return;
+  if(e.key==="ArrowRight"||e.key==="PageDown"){e.preventDefault();stopAuto();go(state.step+1);}
+  if(e.key==="ArrowLeft"||e.key==="PageUp"){e.preventDefault();stopAuto();go(state.step-1);}
+});
+
+/* presenter script sheet */
+const scriptText=()=>STEPS.map((s,k)=>`${k+1}. ${s.label.toUpperCase()}: ${s.title}\n${s.script()}`).join("\n\n");
+function openSheet(){
+  const words=STEPS.reduce((n,s)=>n+s.script().split(/\s+/).length,0);
+  $("sheetMeta").textContent=`${STEPS.length} beats · ${words} words · about ${Math.round(words/140)} minutes at a relaxed pace. Click a beat to jump there.`;
+  $("sheetList").innerHTML=STEPS.map((s,k)=>`<li><h4><button type="button" class="btn" data-jump="${k}" style="padding:3px 10px;font-size:12px">${k+1} · ${s.label}</button></h4><p>${s.script()}</p></li>`).join("");
+  $("overlay").hidden=false;$("closeScript").focus();
+}
+function closeSheet(){$("overlay").hidden=true;$("btnScript").focus();}
+$("btnScript").onclick=openSheet;$("closeScript").onclick=closeSheet;
+$("overlay").addEventListener("click",e=>{if(e.target.id==="overlay")closeSheet();const j=e.target.closest("[data-jump]");if(j){closeSheet();stopAuto();go(+j.dataset.jump);}});
+$("copyScript").onclick=()=>{const t=scriptText(),b=$("copyScript");
+  navigator.clipboard.writeText(t).then(()=>{b.textContent="Copied";setTimeout(()=>b.textContent="Copy script",1600);})
+  .catch(()=>{const r=document.createRange();r.selectNodeContents($("sheetList"));const s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent="Selected, press ⌘C";});};
+
+/* resize */
+function refresh(){readTokens();layout();legendFor(STEPS[state.step].view);render();}
+let rt;addEventListener("resize",()=>{clearTimeout(rt);rt=setTimeout(refresh,80);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(render);
+
+readTokens();layout();go(state.step);
+})();
+</script>
+</body>
+</html>

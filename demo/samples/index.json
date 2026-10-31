@@ -1,0 +1,198 @@
+[
+ {
+  "cls": "disease",
+  "file": "disease_0.jpg",
+  "source": "corn_maize_leaf_disease",
+  "domain": "leaf",
+  "orig_label": "Blight"
+ },
+ {
+  "cls": "disease",
+  "file": "disease_1.jpg",
+  "source": "corn_maize_leaf_disease",
+  "domain": "leaf",
+  "orig_label": "Gray_Leaf_Spot"
+ },
+ {
+  "cls": "disease",
+  "file": "disease_2.jpg",
+  "source": "MH_SoyaHealthVision_disease_classification_leaf",
+  "domain": "leaf",
+  "orig_label": "Rust"
+ },
+ {
+  "cls": "disease",
+  "file": "disease_3.jpg",
+  "source": "MH_SoyaHealthVision_disease_classification_uav",
+  "domain": "uav",
+  "orig_label": "Rust"
+ },
+ {
+  "cls": "disease",
+  "file": "disease_4.jpg",
+  "source": "soybean_leaf_disease_classification",
+  "domain": "leaf",
+  "orig_label": "Septoria_Brown_Spot"
+ },
+ {
+  "cls": "disease",
+  "file": "disease_5.jpg",
+  "source": "cotton_leaf_disease_classification",
+  "domain": "leaf",
+  "orig_label": "Verticillium_Wilt"
+ },
+ {
+  "cls": "healthy",
+  "file": "healthy_0.jpg",
+  "source": "soybean_leaf_disease_classification",
+  "domain": "leaf",
+  "orig_label": "Healthy"
+ },
+ {
+  "cls": "healthy",
+  "file": "healthy_1.jpg",
+  "source": "MH_SoyaHealthVision_disease_classification_uav",
+  "domain": "uav",
+  "orig_label": "Healthy"
+ },
+ {
+  "cls": "healthy",
+  "file": "healthy_2.jpg",
+  "source": "MH_SoyaHealthVision_disease_classification_leaf",
+  "domain": "leaf",
+  "orig_label": "Healthy"
+ },
+ {
+  "cls": "healthy",
+  "file": "healthy_3.jpg",
+  "source": "soybean_leaf_wilt_classification_2",
+  "domain": "ground",
+  "orig_label": "0"
+ },
+ {
+  "cls": "healthy",
+  "file": "healthy_4.jpg",
+  "source": "corn_maize_leaf_disease",
+  "domain": "leaf",
+  "orig_label": "Healthy"
+ },
+ {
+  "cls": "healthy",
+  "file": "healthy_5.jpg",
+  "source": "soybean_leaf_wilt_classification_2",
+  "domain": "ground",
+  "orig_label": "0"
+ },
+ {
+  "cls": "insect_damage",
+  "file": "insect_damage_0.jpg",
+  "source": "MH_SoyaHealthVision_disease_classification_uav",
+  "domain": "uav",
+  "orig_label": "Semilooper_Pest"
+ },
+ {
+  "cls": "insect_damage",
+  "file": "insect_damage_1.jpg",
+  "source": "soybean_insect_classification",
+  "domain": "leaf",
+  "orig_label": "Diabrotica_speciosa"
+ },
+ {
+  "cls": "insect_damage",
+  "file": "insect_damage_2.jpg",
+  "source": "soybean_insect_classification",
+  "domain": "leaf",
+  "orig_label": "Caterpillar"
+ },
+ {
+  "cls": "insect_damage",
+  "file": "insect_damage_3.jpg",
+  "source": "MH_SoyaHealthVision_disease_classification_leaf",
+  "domain": "leaf",
+  "orig_label": "Caterpillar_Semilooper_Pest"
+ },
+ {
+  "cls": "insect_damage",
+  "file": "insect_damage_4.jpg",
+  "source": "MH_SoyaHealthVision_disease_classification_leaf",
+  "domain": "leaf",
+  "orig_label": "Caterpillar_Semilooper_Pest"
+ },
+ {
+  "cls": "insect_damage",
+  "file": "insect_damage_5.jpg",
+  "source": "MH_SoyaHealthVision_disease_classification_uav",
+  "domain": "uav",
+  "orig_label": "Semilooper_Pest"
+ },
+ {
+  "cls": "other",
+  "file": "other_0.jpg",
+  "source": "soybean_leaf_wilt_classification_2",
+  "domain": "ground",
+  "orig_label": "5"
+ },
+ {
+  "cls": "other",
+  "file": "other_3.jpg",
+  "source": "soybean_leaf_disease_classification",
+  "domain": "leaf",
+  "orig_label": "Dry_leaf"
+ },
+ {
+  "cls": "other",
+  "file": "other_4.jpg",
+  "source": "soybean_leaf_disease_classification",
+  "domain": "leaf",
+  "orig_label": "Dry_leaf"
+ },
+ {
+  "cls": "other",
+  "file": "other_5.jpg",
+  "source": "soybean_leaf_wilt_classification_2",
+  "domain": "ground",
+  "orig_label": "3"
+ },
+ {
+  "cls": "weed",
+  "file": "weed_0.jpg",
+  "source": "sorghum_weed_classification",
+  "domain": "ground",
+  "orig_label": "Grass"
+ },
+ {
+  "cls": "weed",
+  "file": "weed_1.jpg",
+  "source": "soybean_weed_uav_brazil",
+  "domain": "uav",
+  "orig_label": "grass"
+ },
+ {
+  "cls": "weed",
+  "file": "weed_2.jpg",
+  "source": "sorghum_weed_classification",
+  "domain": "ground",
+  "orig_label": "Grass"
+ },
+ {
+  "cls": "weed",
+  "file": "weed_3.jpg",
+  "source": "soybean_weed_uav_brazil",
+  "domain": "uav",
+  "orig_label": "grass"
+ },
+ {
+  "cls": "weed",
+  "file": "weed_4.jpg",
+  "source": "MH_Weed16_weed_variety_classification",
+  "domain": "ground",
+  "orig_label": "Little_Mallow(Malva parviflora)"
+ },
+ {
+  "cls": "weed",
+  "file": "weed_5.jpg",
+  "source": "DeepWeeds_classification",
+  "domain": "ground",
+  "orig_label": "0"
+ }
+]

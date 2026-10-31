@@ -1,0 +1,26 @@
+{
+  "name": "@agrivision/ui",
+  "version": "0.1.0",
+  "description": "AgriVision design system: tokens, type, and core UI basics (Chip, Icon, LogoMark, Brand)",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./styles.css": "./dist/styles.css",
+    "./fonts.css": "./dist/fonts.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node scripts/build-css.mjs"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  }
+}

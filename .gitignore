@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+
+# render output: keep only the final video
+out/*
+!out/agrivision-explainer.mp4
+
+# build output + caches
+ui/dist/
+.cache/
+
+# design-sync machine state (regenerated each sync)
+.ds-sync/
+ds-bundle/
+.design-sync/.cache/
+.design-sync/learnings/
+.design-sync/node_modules
+
+.DS_Store

@@ -1,0 +1,28 @@
+{
+  "pkg": "@agrivision/ui",
+  "globalName": "AgriVisionUI",
+  "shape": "package",
+  "buildCmd": "npm --prefix ui run build",
+  "entry": "./ui/dist/index.js",
+  "srcDir": "src",
+  "cssEntry": "dist/styles.css",
+  "extraFonts": [
+    "dist/fonts.css"
+  ],
+  "overrides": {
+    "Brand": {
+      "cardMode": "column"
+    },
+    "Chip": {
+      "cardMode": "column"
+    },
+    "Icon": {
+      "cardMode": "column"
+    },
+    "LogoMark": {
+      "cardMode": "column"
+    }
+  },
+  "readmeHeader": ".design-sync/conventions.md",
+  "projectId": "fb367178-94d0-46db-9460-233c482d3a25"
+}

@@ -34,6 +34,21 @@ def main() -> None:
     result = run_agent_loop("F0412-Z099", low_confidence_client)
     print(json.dumps(result, indent=2))
 
+    print("\n--- rules engine overrides spray to escalate when classifier says 'other' ---")
+    other_client = FakeLLMClient(
+        final_args={
+            "zone_id": "F0412-Z0038",
+            "decision": "spray",
+            "strategy": "spot",
+            "buffer_rings": 0,
+            "rescout_in_days": 7,
+            "reason": "Top class looked actionable.",
+            "estimated_savings_usd": 5.0,
+        }
+    )
+    result = run_agent_loop("F0412-Z0038", other_client)
+    print(json.dumps(result, indent=2))
+
     print("\n--- escalate path ---")
     escalate_client = FakeLLMClient(
         final_tool="escalate",

@@ -14,7 +14,7 @@ DEFAULT_PRODUCT = "generic"
 MAX_WIND_MPH_FALLBACK = 10
 CONFIDENCE_DECIDE_THRESHOLD = 0.65
 BROADCAST_SHARE_THRESHOLD = 0.60
-ABIOTIC_BLOCK_THRESHOLD = 0.5
+ESCALATE_ON_OTHER_THRESHOLD = 0.5
 
 
 def _override(decision: dict, reason: str, new_decision: str = "re-scout") -> dict:
@@ -38,8 +38,11 @@ def apply_rules(decision: dict, product: str = DEFAULT_PRODUCT) -> dict:
     top_class = detections.get("class")
     confidence = detections.get("confidence", 0.0)
 
-    if top_class == "dehydration" and confidence >= ABIOTIC_BLOCK_THRESHOLD:
-        return _override(decision, "classifier says dehydration (abiotic): not treatable by pesticide", "skip")
+    if top_class == "other" and confidence >= ESCALATE_ON_OTHER_THRESHOLD:
+        # Per ml/README.md, "other" (wilting, dry leaves, bare soil, anything
+        # unrecognized) means "no pesticide, send to a person" -- not "no
+        # problem found" -- so this escalates rather than skips.
+        return _override(decision, "classifier top class is 'other': ambiguous, needs a person, not a pesticide", "escalate")
 
     if confidence < CONFIDENCE_DECIDE_THRESHOLD:
         return _override(decision, f"classifier confidence {confidence} below {CONFIDENCE_DECIDE_THRESHOLD}: too low to spray")

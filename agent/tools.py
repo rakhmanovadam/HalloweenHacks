@@ -36,14 +36,23 @@ def get_zone(zone_id: str) -> dict:
         "cells": cells,
         "area_m2": n_cells * 100,
         "edge_context": rng.choice(["none", "woods_north", "road_east", "water_south"]),
-        # RGB-only CV classifier output: single top class + confidence.
-        # IR/NDVI never enters this model -- it stays in the cell-level fields
-        # above (ndvi_mean, ndvi_delta, anomaly_score), computed separately.
-        "detections": {
-            "class": rng.choice(["weeds", "disease", "dehydration", "insects", "healthy"]),
-            "confidence": round(rng.uniform(0.3, 0.95), 2),
-        },
+        # Shape matches ml/predict.py's real output (ConvNeXt-Tiny close-up
+        # classifier, see ml/README.md): top-1 class + confidence, plus the
+        # full softmax over all 5 classes. IR/NDVI never enters this model --
+        # it stays in the cell-level fields above, computed separately.
+        "detections": _fake_classification(rng),
     }
+
+
+_CLOSEUP_CLASSES = ["healthy", "weed", "disease", "insect_damage", "other"]
+
+
+def _fake_classification(rng: random.Random) -> dict:
+    raw = [rng.random() for _ in _CLOSEUP_CLASSES]
+    total = sum(raw)
+    probs = {c: round(p / total, 3) for c, p in zip(_CLOSEUP_CLASSES, raw)}
+    best = max(probs, key=probs.get)
+    return {"class": best, "confidence": probs[best], "probs": probs}
 
 
 def cell_history(cell_id: str, n: int = 3) -> dict:
@@ -110,13 +119,13 @@ def species_tolerance(species: str) -> dict:
 
 
 def pest_mobility(problem: str) -> dict:
-    # "insects" has one entry because the classifier doesn't distinguish species
-    # (aphids vs. stink bugs have very different mobility); this default is a
-    # coarse placeholder until species-level ID exists.
+    # "insect_damage" has one entry because the classifier doesn't distinguish
+    # species (aphids vs. stink bugs have very different mobility); this
+    # default is a coarse placeholder until species-level ID exists.
     table = {
-        "weeds": {"mobility": "none", "default_buffer_rings": 0},
+        "weed": {"mobility": "none", "default_buffer_rings": 0},
         "disease": {"mobility": "low", "default_buffer_rings": 1},
-        "insects": {"mobility": "high", "default_buffer_rings": 2},
+        "insect_damage": {"mobility": "high", "default_buffer_rings": 2},
     }
     result = table.get(problem, {"mobility": "unknown", "default_buffer_rings": 1})
     return {"problem": problem, **result}
@@ -176,7 +185,7 @@ def neighboring_zone_diagnoses(zone_id: str) -> dict:
         "neighbors": [
             {
                 "zone_id": f"{zone_id}-n{i}",
-                "diagnosis": rng.choice(["weeds", "disease", "dehydration", "insects", "healthy"]),
+                "diagnosis": rng.choice(_CLOSEUP_CLASSES),
                 "decision": rng.choice(["spray", "skip", None]),
             }
             for i in range(rng.randint(0, 3))

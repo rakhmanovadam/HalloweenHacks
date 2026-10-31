@@ -1,0 +1,54 @@
+run 20261031-180527  model convnext_tiny.fb_in22k_ft_in1k  img 224  epochs 6
+best val macro-F1: 0.9744
+
+images per split and class:
+cls    disease  healthy  insect_damage  other  weed
+split                                              
+test       246      241            256    159   252
+train     2500     2500           2500   1240  2500
+val        254      259            244    157   248
+
+TEST classification report:
+               precision    recall  f1-score   support
+
+      healthy      0.971     0.988     0.979       241
+         weed      0.996     0.996     0.996       252
+      disease      0.972     0.980     0.976       246
+insect_damage      0.976     0.953     0.964       256
+        other      0.994     0.994     0.994       159
+
+     accuracy                          0.981      1154
+    macro avg      0.982     0.982     0.982      1154
+ weighted avg      0.981     0.981     0.981      1154
+
+confusion matrix (rows = true, cols = predicted):
+               healthy  weed  disease  insect_damage  other
+healthy            238     1        1              1      0
+weed                 0   251        0              0      1
+disease              0     0      241              5      0
+insect_damage        6     0        6            244      0
+other                1     0        0              0    158
+
+test accuracy by capture domain:
+         mean  size
+domain             
+field   0.986    74
+ground  0.992   246
+leaf    0.963   481
+uav     0.997   353
+
+test accuracy by source dataset:
+                                                  mean  size
+source                                                      
+DeepWeeds_classification                         1.000    44
+MH_SoyaHealthVision_disease_classification_leaf  0.869    84
+MH_SoyaHealthVision_disease_classification_uav   1.000    89
+MH_Weed16_weed_variety_classification            1.000    48
+corn_maize_leaf_disease                          1.000    70
+cotton_leaf_disease_classification               1.000    39
+plant_doc_classification                         0.986    74
+sorghum_weed_classification                      0.988    80
+soybean_insect_classification                    0.972   248
+soybean_leaf_disease_classification              1.000    40
+soybean_leaf_wilt_classification_2               0.986    74
+soybean_weed_uav_brazil                          0.996   264

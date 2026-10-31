@@ -1,0 +1,1155 @@
+path,cls,source,orig_label,domain,license,split,y,pred
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_531.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_215.jpg,disease,corn_maize_leaf_disease,Blight,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_34.jpg,disease,cotton_leaf_disease_classification,Verticillium_Wilt,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_2178.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_1788.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Spectoria_Brown_Spot,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_2082.jpg,disease,plant_doc_classification,Tomato Early blight leaf,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_2197.jpg,disease,corn_maize_leaf_disease,Common_Rust,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/plant_doc_classification_950.jpg,disease,plant_doc_classification,Potato leaf late blight,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_2193.jpg,disease,corn_maize_leaf_disease,Common_Rust,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_846.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_649.jpg,disease,cotton_leaf_disease_classification,Verticillium_Wilt,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_2015.jpg,disease,corn_maize_leaf_disease,Blight,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_32.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,insect_damage
+/data/images/disease/corn_maize_leaf_disease_2344.jpg,disease,corn_maize_leaf_disease,Blight,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_765.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_485.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Spectoria_Brown_Spot,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_1259.jpg,disease,plant_doc_classification,Tomato Early blight leaf,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_1895.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Spectoria_Brown_Spot,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_821.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_1804.jpg,disease,corn_maize_leaf_disease,Common_Rust,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_107.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_2557.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_1869.jpg,disease,plant_doc_classification,Apple rust leaf,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_1182.jpg,disease,corn_maize_leaf_disease,Common_Rust,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_2696.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_1921.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_1638.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_88.jpg,disease,cotton_leaf_disease_classification,Fusarium_Wilt,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_2802.jpg,disease,corn_maize_leaf_disease,Common_Rust,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_229.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_207.jpg,disease,cotton_leaf_disease_classification,Verticillium_Wilt,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_2219.jpg,disease,corn_maize_leaf_disease,Blight,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_166.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Mosaic,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_1302.jpg,disease,plant_doc_classification,Corn leaf blight,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_2580.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_285.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Spectoria_Brown_Spot,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/soybean_leaf_disease_classification_355.jpg,disease,soybean_leaf_disease_classification,Bacterial leaf Blight,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_2431.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_1993.jpg,disease,plant_doc_classification,Corn rust leaf,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_434.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_1381.jpg,disease,plant_doc_classification,Tomato Septoria leaf spot,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_351.jpg,disease,cotton_leaf_disease_classification,Fusarium_Wilt,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_1270.jpg,disease,plant_doc_classification,Tomato mold leaf,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_852.jpg,disease,cotton_leaf_disease_classification,Alternaria_Leaf,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_1334.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_391.jpg,disease,plant_doc_classification,Tomato leaf yellow virus,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_2252.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_1470.jpg,disease,plant_doc_classification,Tomato leaf yellow virus,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_2482.jpg,disease,corn_maize_leaf_disease,Blight,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/corn_maize_leaf_disease_2267.jpg,disease,corn_maize_leaf_disease,Gray_Leaf_Spot,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/plant_doc_classification_1830.jpg,disease,plant_doc_classification,grape leaf black rot,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_750.jpg,disease,plant_doc_classification,Corn Gray leaf spot,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_1166.jpg,disease,corn_maize_leaf_disease,Blight,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_1696.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Mosaic,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_5.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_927.jpg,disease,corn_maize_leaf_disease,Gray_Leaf_Spot,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/corn_maize_leaf_disease_68.jpg,disease,corn_maize_leaf_disease,Gray_Leaf_Spot,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/corn_maize_leaf_disease_1448.jpg,disease,corn_maize_leaf_disease,Gray_Leaf_Spot,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/soybean_leaf_disease_classification_878.jpg,disease,soybean_leaf_disease_classification,Vein Necrosis,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_2225.jpg,disease,plant_doc_classification,Tomato leaf bacterial spot,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_1044.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_2180.jpg,disease,plant_doc_classification,grape leaf black rot,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_2160.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_1067.jpg,disease,cotton_leaf_disease_classification,Verticillium_Wilt,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_405.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_986.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_2056.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_181.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,insect_damage
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_1018.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Spectoria_Brown_Spot,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_658.jpg,disease,cotton_leaf_disease_classification,Verticillium_Wilt,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_1415.jpg,disease,corn_maize_leaf_disease,Common_Rust,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/corn_maize_leaf_disease_1241.jpg,disease,corn_maize_leaf_disease,Blight,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/corn_maize_leaf_disease_2256.jpg,disease,corn_maize_leaf_disease,Common_Rust,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_171.jpg,disease,cotton_leaf_disease_classification,Alternaria_Leaf,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_657.jpg,disease,cotton_leaf_disease_classification,Verticillium_Wilt,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_1981.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_1622.jpg,disease,plant_doc_classification,Corn Gray leaf spot,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_1210.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Frog_Leaf_Eye,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/soybean_leaf_disease_classification_864.jpg,disease,soybean_leaf_disease_classification,Septoria_Brown_Spot,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_2070.jpg,disease,plant_doc_classification,Apple rust leaf,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_1360.jpg,disease,corn_maize_leaf_disease,Blight,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_705.jpg,disease,cotton_leaf_disease_classification,Bacterial_Blight,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_1261.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Mosaic,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_284.jpg,disease,cotton_leaf_disease_classification,Fusarium_Wilt,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_189.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_1720.jpg,disease,corn_maize_leaf_disease,Common_Rust,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/plant_doc_classification_1599.jpg,disease,plant_doc_classification,Bell_pepper leaf spot,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/soybean_leaf_disease_classification_339.jpg,disease,soybean_leaf_disease_classification,Bacterial leaf Blight,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/soybean_leaf_disease_classification_587.jpg,disease,soybean_leaf_disease_classification,Bacterial leaf Blight,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_1575.jpg,disease,plant_doc_classification,Apple rust leaf,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_1766.jpg,disease,corn_maize_leaf_disease,Common_Rust,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_1164.jpg,disease,cotton_leaf_disease_classification,Fusarium_Wilt,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_1385.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_970.jpg,disease,plant_doc_classification,Corn leaf blight,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_492.jpg,disease,cotton_leaf_disease_classification,Bacterial_Blight,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_291.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Mosaic,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_572.jpg,disease,corn_maize_leaf_disease,Blight,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/plant_doc_classification_841.jpg,disease,plant_doc_classification,Apple rust leaf,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_1350.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_583.jpg,disease,plant_doc_classification,Apple rust leaf,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_2481.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_2144.jpg,disease,corn_maize_leaf_disease,Blight,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/plant_doc_classification_1053.jpg,disease,plant_doc_classification,Corn leaf blight,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_2706.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_1574.jpg,disease,plant_doc_classification,Tomato leaf bacterial spot,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_37.jpg,disease,plant_doc_classification,Tomato Early blight leaf,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_2014.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_2237.jpg,disease,corn_maize_leaf_disease,Blight,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_2435.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Mosaic,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_825.jpg,disease,cotton_leaf_disease_classification,Verticillium_Wilt,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_1422.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_2408.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_21.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Spectoria_Brown_Spot,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_305.jpg,disease,cotton_leaf_disease_classification,Bacterial_Blight,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_1314.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_1435.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_764.jpg,disease,plant_doc_classification,Tomato leaf bacterial spot,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_2783.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_2206.jpg,disease,plant_doc_classification,Tomato Early blight leaf,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_2441.jpg,disease,corn_maize_leaf_disease,Blight,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_2730.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Mosaic,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_948.jpg,disease,corn_maize_leaf_disease,Blight,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/soybean_leaf_disease_classification_367.jpg,disease,soybean_leaf_disease_classification,Vein Necrosis,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_695.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_2064.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_1044.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_391.jpg,disease,cotton_leaf_disease_classification,Bacterial_Blight,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_928.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_1468.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_838.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_288.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Spectoria_Brown_Spot,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_1454.jpg,disease,plant_doc_classification,Tomato mold leaf,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_196.jpg,disease,cotton_leaf_disease_classification,Fusarium_Wilt,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_1805.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/soybean_leaf_disease_classification_280.jpg,disease,soybean_leaf_disease_classification,Vein Necrosis,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_1994.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_471.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_2672.jpg,disease,corn_maize_leaf_disease,Common_Rust,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_1137.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_1389.jpg,disease,corn_maize_leaf_disease,Blight,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_19.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_468.jpg,disease,plant_doc_classification,Corn leaf blight,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_1560.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_2317.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Mosaic,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_2184.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_2235.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Spectoria_Brown_Spot,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_2647.jpg,disease,corn_maize_leaf_disease,Blight,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/corn_maize_leaf_disease_2759.jpg,disease,corn_maize_leaf_disease,Blight,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_269.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/soybean_leaf_disease_classification_597.jpg,disease,soybean_leaf_disease_classification,Bacterial leaf Blight,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_1304.jpg,disease,cotton_leaf_disease_classification,Fusarium_Wilt,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_1036.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Spectoria_Brown_Spot,leaf,cc-by-4.0,test,2,insect_damage
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_1797.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Mosaic,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_2070.jpg,disease,corn_maize_leaf_disease,Common_Rust,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_2262.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Mosaic,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_519.jpg,disease,plant_doc_classification,Potato leaf early blight,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_2303.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_1817.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Mosaic,leaf,cc-by-4.0,test,2,insect_damage
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_2161.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Frog_Leaf_Eye,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_2744.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_689.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_784.jpg,disease,cotton_leaf_disease_classification,Verticillium_Wilt,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_168.jpg,disease,cotton_leaf_disease_classification,Alternaria_Leaf,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_447.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_1972.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Mosaic,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_856.jpg,disease,cotton_leaf_disease_classification,Fusarium_Wilt,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_1093.jpg,disease,corn_maize_leaf_disease,Blight,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_1615.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Mosaic,leaf,cc-by-4.0,test,2,insect_damage
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_2359.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_1484.jpg,disease,corn_maize_leaf_disease,Common_Rust,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_1036.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_1149.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_129.jpg,disease,cotton_leaf_disease_classification,Verticillium_Wilt,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_167.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Spectoria_Brown_Spot,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_2719.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_2749.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_2506.jpg,disease,corn_maize_leaf_disease,Gray_Leaf_Spot,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/plant_doc_classification_1983.jpg,disease,plant_doc_classification,Squash Powdery mildew leaf,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_141.jpg,disease,cotton_leaf_disease_classification,Alternaria_Leaf,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_842.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_1839.jpg,disease,plant_doc_classification,Tomato Septoria leaf spot,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/soybean_leaf_disease_classification_881.jpg,disease,soybean_leaf_disease_classification,Bacterial leaf Blight,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_1341.jpg,disease,cotton_leaf_disease_classification,Fusarium_Wilt,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_2141.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_1237.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_1300.jpg,disease,plant_doc_classification,Corn leaf blight,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_264.jpg,disease,cotton_leaf_disease_classification,Verticillium_Wilt,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_925.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_330.jpg,disease,cotton_leaf_disease_classification,Fusarium_Wilt,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_412.jpg,disease,corn_maize_leaf_disease,Blight,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/corn_maize_leaf_disease_2471.jpg,disease,corn_maize_leaf_disease,Common_Rust,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_1166.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_1154.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Mosaic,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_380.jpg,disease,plant_doc_classification,grape leaf black rot,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_660.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_1189.jpg,disease,plant_doc_classification,Corn rust leaf,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_1713.jpg,disease,corn_maize_leaf_disease,Blight,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/plant_doc_classification_67.jpg,disease,plant_doc_classification,Apple Scab Leaf,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_2149.jpg,disease,plant_doc_classification,Potato leaf early blight,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_2811.jpg,disease,corn_maize_leaf_disease,Blight,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_2754.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Mosaic,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_1427.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_74.jpg,disease,plant_doc_classification,Apple Scab Leaf,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_1374.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_1878.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_2355.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_542.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_2231.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_879.jpg,disease,cotton_leaf_disease_classification,Verticillium_Wilt,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_88.jpg,disease,plant_doc_classification,grape leaf black rot,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_2576.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_1752.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_1467.jpg,disease,plant_doc_classification,Corn leaf blight,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_690.jpg,disease,cotton_leaf_disease_classification,Fusarium_Wilt,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_272.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_1724.jpg,disease,corn_maize_leaf_disease,Common_Rust,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_850.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Spectoria_Brown_Spot,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_1444.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Mosaic,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/soybean_leaf_disease_classification_346.jpg,disease,soybean_leaf_disease_classification,Bacterial leaf Blight,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_1368.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_1564.jpg,disease,plant_doc_classification,Corn leaf blight,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_921.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_1307.jpg,disease,corn_maize_leaf_disease,Blight,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/plant_doc_classification_813.jpg,disease,plant_doc_classification,Tomato mold leaf,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_2146.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_1777.jpg,disease,corn_maize_leaf_disease,Common_Rust,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/plant_doc_classification_1250.jpg,disease,plant_doc_classification,Tomato Early blight leaf,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_335.jpg,disease,plant_doc_classification,Corn rust leaf,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/cotton_leaf_disease_classification_1209.jpg,disease,cotton_leaf_disease_classification,Verticillium_Wilt,leaf,cc-by-nc-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_129.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Mosaic,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_214.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_2265.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_1290.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Mosaic,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_1032.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_2507.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Rust,uav,cc-by-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_1063.jpg,disease,corn_maize_leaf_disease,Gray_Leaf_Spot,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_146.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/disease/plant_doc_classification_1528.jpg,disease,plant_doc_classification,Potato leaf early blight,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_419.jpg,disease,corn_maize_leaf_disease,Gray_Leaf_Spot,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_leaf_2133.jpg,disease,MH_SoyaHealthVision_disease_classification_leaf,Rust,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_204.jpg,disease,corn_maize_leaf_disease,Blight,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/soybean_leaf_disease_classification_500.jpg,disease,soybean_leaf_disease_classification,Septoria_Brown_Spot,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/corn_maize_leaf_disease_667.jpg,disease,corn_maize_leaf_disease,Blight,leaf,unknown (research only until confirmed),test,2,disease
+/data/images/disease/plant_doc_classification_481.jpg,disease,plant_doc_classification,Tomato Septoria leaf spot,field,cc-by-sa-4.0,test,2,disease
+/data/images/disease/soybean_leaf_disease_classification_368.jpg,disease,soybean_leaf_disease_classification,Septoria_Brown_Spot,leaf,cc-by-4.0,test,2,disease
+/data/images/disease/MH_SoyaHealthVision_disease_classification_uav_1123.jpg,disease,MH_SoyaHealthVision_disease_classification_uav,Mosaic,uav,cc-by-4.0,test,2,disease
+/data/images/healthy/sorghum_weed_classification_2682.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5524.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/sorghum_weed_classification_2992.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/plant_doc_classification_1294.jpg,healthy,plant_doc_classification,Blueberry leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_6755.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/MH_SoyaHealthVision_disease_classification_leaf_279.jpg,healthy,MH_SoyaHealthVision_disease_classification_leaf,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_922.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/sorghum_weed_classification_1484.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/plant_doc_classification_2105.jpg,healthy,plant_doc_classification,Tomato leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/plant_doc_classification_2181.jpg,healthy,plant_doc_classification,Raspberry leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/soybean_leaf_wilt_classification_2_682.jpg,healthy,soybean_leaf_wilt_classification_2,0,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_leaf_wilt_classification_2_324.jpg,healthy,soybean_leaf_wilt_classification_2,0,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/sorghum_weed_classification_2322.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_leaf_disease_classification_1161.jpg,healthy,soybean_leaf_disease_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_347.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/sorghum_weed_classification_3026.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_415.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/plant_doc_classification_2416.jpg,healthy,plant_doc_classification,Cherry leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5047.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/corn_maize_leaf_disease_1835.jpg,healthy,corn_maize_leaf_disease,Healthy,leaf,unknown (research only until confirmed),test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5546.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/MH_SoyaHealthVision_disease_classification_leaf_2749.jpg,healthy,MH_SoyaHealthVision_disease_classification_leaf,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/plant_doc_classification_1419.jpg,healthy,plant_doc_classification,Blueberry leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/soybean_leaf_wilt_classification_2_1525.jpg,healthy,soybean_leaf_wilt_classification_2,0,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_4152.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_leaf_disease_classification_1048.jpg,healthy,soybean_leaf_disease_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_leaf_wilt_classification_2_548.jpg,healthy,soybean_leaf_wilt_classification_2,0,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/corn_maize_leaf_disease_2668.jpg,healthy,corn_maize_leaf_disease,Healthy,leaf,unknown (research only until confirmed),test,0,healthy
+/data/images/healthy/plant_doc_classification_528.jpg,healthy,plant_doc_classification,Raspberry leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5950.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/sorghum_weed_classification_2245.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_861.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,insect_damage
+/data/images/healthy/soybean_weed_uav_brazil_6078.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_1523.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_4939.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_4796.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_3682.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_leaf_wilt_classification_2_1879.jpg,healthy,soybean_leaf_wilt_classification_2,0,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5406.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5688.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/plant_doc_classification_2358.jpg,healthy,plant_doc_classification,Soyabean leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/MH_SoyaHealthVision_disease_classification_uav_783.jpg,healthy,MH_SoyaHealthVision_disease_classification_uav,Healthy,uav,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5810.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/corn_maize_leaf_disease_996.jpg,healthy,corn_maize_leaf_disease,Healthy,leaf,unknown (research only until confirmed),test,0,healthy
+/data/images/healthy/soybean_leaf_wilt_classification_2_611.jpg,healthy,soybean_leaf_wilt_classification_2,0,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/plant_doc_classification_2470.jpg,healthy,plant_doc_classification,Soyabean leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/soybean_leaf_disease_classification_1122.jpg,healthy,soybean_leaf_disease_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5257.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5751.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_6303.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/corn_maize_leaf_disease_342.jpg,healthy,corn_maize_leaf_disease,Healthy,leaf,unknown (research only until confirmed),test,0,healthy
+/data/images/healthy/cotton_leaf_disease_classification_925.jpg,healthy,cotton_leaf_disease_classification,Healthy_Leaf,leaf,cc-by-nc-4.0,test,0,healthy
+/data/images/healthy/corn_maize_leaf_disease_1396.jpg,healthy,corn_maize_leaf_disease,Healthy,leaf,unknown (research only until confirmed),test,0,healthy
+/data/images/healthy/sorghum_weed_classification_1922.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/plant_doc_classification_69.jpg,healthy,plant_doc_classification,Apple leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5109.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_4933.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_1614.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_6007.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_6567.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/corn_maize_leaf_disease_900.jpg,healthy,corn_maize_leaf_disease,Healthy,leaf,unknown (research only until confirmed),test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_4220.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/corn_maize_leaf_disease_923.jpg,healthy,corn_maize_leaf_disease,Healthy,leaf,unknown (research only until confirmed),test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_6385.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/cotton_leaf_disease_classification_1050.jpg,healthy,cotton_leaf_disease_classification,Healthy_Leaf,leaf,cc-by-nc-4.0,test,0,healthy
+/data/images/healthy/corn_maize_leaf_disease_1994.jpg,healthy,corn_maize_leaf_disease,Healthy,leaf,unknown (research only until confirmed),test,0,healthy
+/data/images/healthy/plant_doc_classification_2027.jpg,healthy,plant_doc_classification,Peach leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_6170.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_3812.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/MH_SoyaHealthVision_disease_classification_uav_1186.jpg,healthy,MH_SoyaHealthVision_disease_classification_uav,Healthy,uav,cc-by-4.0,test,0,healthy
+/data/images/healthy/sorghum_weed_classification_2784.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/MH_SoyaHealthVision_disease_classification_uav_948.jpg,healthy,MH_SoyaHealthVision_disease_classification_uav,Healthy,uav,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_2146.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_6253.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_363.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_leaf_disease_classification_73.jpg,healthy,soybean_leaf_disease_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/plant_doc_classification_1025.jpg,healthy,plant_doc_classification,Cherry leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/plant_doc_classification_1226.jpg,healthy,plant_doc_classification,Blueberry leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_1481.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/MH_SoyaHealthVision_disease_classification_leaf_137.jpg,healthy,MH_SoyaHealthVision_disease_classification_leaf,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/MH_SoyaHealthVision_disease_classification_leaf_100.jpg,healthy,MH_SoyaHealthVision_disease_classification_leaf,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_814.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/sorghum_weed_classification_2099.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_leaf_wilt_classification_2_172.jpg,healthy,soybean_leaf_wilt_classification_2,0,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_1288.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/MH_SoyaHealthVision_disease_classification_uav_1445.jpg,healthy,MH_SoyaHealthVision_disease_classification_uav,Healthy,uav,cc-by-4.0,test,0,healthy
+/data/images/healthy/sorghum_weed_classification_2462.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5794.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_leaf_wilt_classification_2_480.jpg,healthy,soybean_leaf_wilt_classification_2,0,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/MH_SoyaHealthVision_disease_classification_uav_1315.jpg,healthy,MH_SoyaHealthVision_disease_classification_uav,Healthy,uav,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5525.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/plant_doc_classification_915.jpg,healthy,plant_doc_classification,Soyabean leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/cotton_leaf_disease_classification_267.jpg,healthy,cotton_leaf_disease_classification,Healthy_Leaf,leaf,cc-by-nc-4.0,test,0,healthy
+/data/images/healthy/soybean_leaf_wilt_classification_2_1511.jpg,healthy,soybean_leaf_wilt_classification_2,0,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/cotton_leaf_disease_classification_164.jpg,healthy,cotton_leaf_disease_classification,Healthy_Leaf,leaf,cc-by-nc-4.0,test,0,healthy
+/data/images/healthy/cotton_leaf_disease_classification_884.jpg,healthy,cotton_leaf_disease_classification,Healthy_Leaf,leaf,cc-by-nc-4.0,test,0,healthy
+/data/images/healthy/MH_SoyaHealthVision_disease_classification_leaf_2572.jpg,healthy,MH_SoyaHealthVision_disease_classification_leaf,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_leaf_wilt_classification_2_1177.jpg,healthy,soybean_leaf_wilt_classification_2,0,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_4687.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5238.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/cotton_leaf_disease_classification_625.jpg,healthy,cotton_leaf_disease_classification,Healthy_Leaf,leaf,cc-by-nc-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_4010.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_2198.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_leaf_wilt_classification_2_1659.jpg,healthy,soybean_leaf_wilt_classification_2,0,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_leaf_wilt_classification_2_217.jpg,healthy,soybean_leaf_wilt_classification_2,0,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/cotton_leaf_disease_classification_1211.jpg,healthy,cotton_leaf_disease_classification,Healthy_Leaf,leaf,cc-by-nc-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5476.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5649.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_leaf_disease_classification_425.jpg,healthy,soybean_leaf_disease_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/corn_maize_leaf_disease_2990.jpg,healthy,corn_maize_leaf_disease,Healthy,leaf,unknown (research only until confirmed),test,0,healthy
+/data/images/healthy/soybean_insect_classification_31.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/corn_maize_leaf_disease_1845.jpg,healthy,corn_maize_leaf_disease,Healthy,leaf,unknown (research only until confirmed),test,0,healthy
+/data/images/healthy/sorghum_weed_classification_2539.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_177.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_1651.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/MH_SoyaHealthVision_disease_classification_uav_463.jpg,healthy,MH_SoyaHealthVision_disease_classification_uav,Healthy,uav,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_6480.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/corn_maize_leaf_disease_735.jpg,healthy,corn_maize_leaf_disease,Healthy,leaf,unknown (research only until confirmed),test,0,healthy
+/data/images/healthy/sorghum_weed_classification_2376.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/corn_maize_leaf_disease_3074.jpg,healthy,corn_maize_leaf_disease,Healthy,leaf,unknown (research only until confirmed),test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_6704.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/corn_maize_leaf_disease_1513.jpg,healthy,corn_maize_leaf_disease,Healthy,leaf,unknown (research only until confirmed),test,0,healthy
+/data/images/healthy/corn_maize_leaf_disease_980.jpg,healthy,corn_maize_leaf_disease,Healthy,leaf,unknown (research only until confirmed),test,0,healthy
+/data/images/healthy/MH_SoyaHealthVision_disease_classification_leaf_657.jpg,healthy,MH_SoyaHealthVision_disease_classification_leaf,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/sorghum_weed_classification_1590.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_leaf_wilt_classification_2_1755.jpg,healthy,soybean_leaf_wilt_classification_2,0,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/sorghum_weed_classification_1958.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_6220.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_leaf_wilt_classification_2_381.jpg,healthy,soybean_leaf_wilt_classification_2,0,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/plant_doc_classification_405.jpg,healthy,plant_doc_classification,Strawberry leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_1575.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/sorghum_weed_classification_1274.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/sorghum_weed_classification_1824.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_3973.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/plant_doc_classification_500.jpg,healthy,plant_doc_classification,Strawberry leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/soybean_leaf_wilt_classification_2_442.jpg,healthy,soybean_leaf_wilt_classification_2,0,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_4921.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_leaf_disease_classification_545.jpg,healthy,soybean_leaf_disease_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_leaf_wilt_classification_2_1085.jpg,healthy,soybean_leaf_wilt_classification_2,0,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5921.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_6261.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_866.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_4699.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_leaf_disease_classification_963.jpg,healthy,soybean_leaf_disease_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_leaf_wilt_classification_2_1066.jpg,healthy,soybean_leaf_wilt_classification_2,0,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_1894.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5083.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/plant_doc_classification_671.jpg,healthy,plant_doc_classification,Blueberry leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/plant_doc_classification_1608.jpg,healthy,plant_doc_classification,Raspberry leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_570.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_6485.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/corn_maize_leaf_disease_2986.jpg,healthy,corn_maize_leaf_disease,Healthy,leaf,unknown (research only until confirmed),test,0,healthy
+/data/images/healthy/sorghum_weed_classification_3008.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_6428.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_1638.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/sorghum_weed_classification_2007.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_leaf_wilt_classification_2_1453.jpg,healthy,soybean_leaf_wilt_classification_2,0,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/MH_SoyaHealthVision_disease_classification_uav_2781.jpg,healthy,MH_SoyaHealthVision_disease_classification_uav,Healthy,uav,cc-by-4.0,test,0,healthy
+/data/images/healthy/plant_doc_classification_232.jpg,healthy,plant_doc_classification,Strawberry leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/MH_SoyaHealthVision_disease_classification_uav_728.jpg,healthy,MH_SoyaHealthVision_disease_classification_uav,Healthy,uav,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_6232.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_200.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/cotton_leaf_disease_classification_721.jpg,healthy,cotton_leaf_disease_classification,Healthy_Leaf,leaf,cc-by-nc-4.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_3667.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/cotton_leaf_disease_classification_161.jpg,healthy,cotton_leaf_disease_classification,Healthy_Leaf,leaf,cc-by-nc-4.0,test,0,healthy
+/data/images/healthy/sorghum_weed_classification_2524.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5866.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_2668.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5848.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/plant_doc_classification_1763.jpg,healthy,plant_doc_classification,Blueberry leaf,field,cc-by-sa-4.0,test,0,disease
+/data/images/healthy/plant_doc_classification_46.jpg,healthy,plant_doc_classification,Apple leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/sorghum_weed_classification_3017.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5453.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/plant_doc_classification_1309.jpg,healthy,plant_doc_classification,Raspberry leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_6702.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/corn_maize_leaf_disease_1780.jpg,healthy,corn_maize_leaf_disease,Healthy,leaf,unknown (research only until confirmed),test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_4078.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/sorghum_weed_classification_1390.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/MH_SoyaHealthVision_disease_classification_uav_2130.jpg,healthy,MH_SoyaHealthVision_disease_classification_uav,Healthy,uav,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5387.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/plant_doc_classification_2098.jpg,healthy,plant_doc_classification,Apple leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/sorghum_weed_classification_2678.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5676.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_3678.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_6107.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/plant_doc_classification_1843.jpg,healthy,plant_doc_classification,Raspberry leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_690.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/sorghum_weed_classification_1836.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/sorghum_weed_classification_2777.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_4307.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_2725.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/sorghum_weed_classification_2456.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,weed
+/data/images/healthy/soybean_weed_uav_brazil_6740.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_leaf_disease_classification_682.jpg,healthy,soybean_leaf_disease_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_6636.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/corn_maize_leaf_disease_589.jpg,healthy,corn_maize_leaf_disease,Healthy,leaf,unknown (research only until confirmed),test,0,healthy
+/data/images/healthy/soybean_insect_classification_1873.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_6018.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/sorghum_weed_classification_2070.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_714.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_6543.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/plant_doc_classification_1071.jpg,healthy,plant_doc_classification,grape leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5106.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/corn_maize_leaf_disease_1669.jpg,healthy,corn_maize_leaf_disease,Healthy,leaf,unknown (research only until confirmed),test,0,healthy
+/data/images/healthy/sorghum_weed_classification_2434.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/MH_SoyaHealthVision_disease_classification_uav_1511.jpg,healthy,MH_SoyaHealthVision_disease_classification_uav,Healthy,uav,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_leaf_wilt_classification_2_1017.jpg,healthy,soybean_leaf_wilt_classification_2,0,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_3128.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_6622.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/corn_maize_leaf_disease_1046.jpg,healthy,corn_maize_leaf_disease,Healthy,leaf,unknown (research only until confirmed),test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_6056.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_96.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/corn_maize_leaf_disease_76.jpg,healthy,corn_maize_leaf_disease,Healthy,leaf,unknown (research only until confirmed),test,0,healthy
+/data/images/healthy/sorghum_weed_classification_2669.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_leaf_wilt_classification_2_1258.jpg,healthy,soybean_leaf_wilt_classification_2,0,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_6171.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/plant_doc_classification_601.jpg,healthy,plant_doc_classification,Cherry leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/corn_maize_leaf_disease_453.jpg,healthy,corn_maize_leaf_disease,Healthy,leaf,unknown (research only until confirmed),test,0,healthy
+/data/images/healthy/corn_maize_leaf_disease_3144.jpg,healthy,corn_maize_leaf_disease,Healthy,leaf,unknown (research only until confirmed),test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_3842.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_leaf_wilt_classification_2_420.jpg,healthy,soybean_leaf_wilt_classification_2,0,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/corn_maize_leaf_disease_420.jpg,healthy,corn_maize_leaf_disease,Healthy,leaf,unknown (research only until confirmed),test,0,healthy
+/data/images/healthy/plant_doc_classification_1659.jpg,healthy,plant_doc_classification,grape leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/plant_doc_classification_354.jpg,healthy,plant_doc_classification,Apple leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5694.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/plant_doc_classification_385.jpg,healthy,plant_doc_classification,Apple leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5384.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_4167.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5266.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/MH_SoyaHealthVision_disease_classification_leaf_1127.jpg,healthy,MH_SoyaHealthVision_disease_classification_leaf,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_6145.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_leaf_wilt_classification_2_907.jpg,healthy,soybean_leaf_wilt_classification_2,0,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_669.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/plant_doc_classification_2386.jpg,healthy,plant_doc_classification,Cherry leaf,field,cc-by-sa-4.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_6214.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_5542.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/healthy/soybean_insect_classification_1355.jpg,healthy,soybean_insect_classification,Healthy,leaf,cc-by-4.0,test,0,healthy
+/data/images/healthy/corn_maize_leaf_disease_249.jpg,healthy,corn_maize_leaf_disease,Healthy,leaf,unknown (research only until confirmed),test,0,healthy
+/data/images/healthy/sorghum_weed_classification_1642.jpg,healthy,sorghum_weed_classification,Sorghum,ground,cc-by-4.0,test,0,healthy
+/data/images/healthy/corn_maize_leaf_disease_1402.jpg,healthy,corn_maize_leaf_disease,Healthy,leaf,unknown (research only until confirmed),test,0,healthy
+/data/images/healthy/soybean_weed_uav_brazil_6554.jpg,healthy,soybean_weed_uav_brazil,soybean,uav,cc-by-nc-3.0,test,0,healthy
+/data/images/insect_damage/soybean_insect_classification_2636.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_leaf_2715.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_leaf,Caterpillar_Semilooper_Pest,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_285.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1554.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_uav_663.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_uav,Semilooper_Pest,uav,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_uav_1579.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_uav,Semilooper_Pest,uav,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2820.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_936.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3495.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_142.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3105.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_uav_852.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_uav,Semilooper_Pest,uav,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1262.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_leaf_1496.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_leaf,Caterpillar_Semilooper_Pest,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_376.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_6034.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4802.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5499.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_uav_2720.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_uav,Semilooper_Pest,uav,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2920.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_437.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3767.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4529.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_uav_1673.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_uav,Semilooper_Pest,uav,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_6067.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2074.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1256.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5731.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5876.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4078.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1769.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4453.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_uav_1757.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_uav,Semilooper_Pest,uav,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1598.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_leaf_225.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_leaf,Caterpillar_Semilooper_Pest,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5931.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4452.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_leaf_1499.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_leaf,Caterpillar_Semilooper_Pest,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5476.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3021.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3633.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_leaf_1475.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_leaf,Caterpillar_Semilooper_Pest,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_6403.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_uav_759.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_uav,Semilooper_Pest,uav,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2228.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_uav_1450.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_uav,Semilooper_Pest,uav,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_6069.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2934.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1194.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1059.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3356.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4140.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3780.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_leaf_178.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_leaf,Caterpillar_Semilooper_Pest,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3929.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5146.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5283.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1380.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_187.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3640.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3561.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5803.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_leaf_781.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_leaf,Caterpillar_Semilooper_Pest,leaf,cc-by-4.0,test,3,disease
+/data/images/insect_damage/soybean_insect_classification_2423.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_uav_1247.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_uav,Semilooper_Pest,uav,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5644.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_leaf_767.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_leaf,Caterpillar_Semilooper_Pest,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5852.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_leaf_1479.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_leaf,Caterpillar_Semilooper_Pest,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5242.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5581.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1772.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_6038.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_uav_2599.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_uav,Semilooper_Pest,uav,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4557.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1758.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3183.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_295.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_leaf_1213.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_leaf,Caterpillar_Semilooper_Pest,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_leaf_61.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_leaf,Caterpillar_Semilooper_Pest,leaf,cc-by-4.0,test,3,disease
+/data/images/insect_damage/soybean_insect_classification_1945.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_6355.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1219.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_725.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3876.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2162.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_uav_1848.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_uav,Semilooper_Pest,uav,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_6282.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4310.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4891.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_706.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,healthy
+/data/images/insect_damage/soybean_insect_classification_1142.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2015.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_leaf_648.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_leaf,Caterpillar_Semilooper_Pest,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4230.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_695.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5302.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3206.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5622.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2835.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4470.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2601.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_leaf_380.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_leaf,Caterpillar_Semilooper_Pest,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_6112.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5977.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_leaf_2066.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_leaf,Caterpillar_Semilooper_Pest,leaf,cc-by-4.0,test,3,disease
+/data/images/insect_damage/soybean_insect_classification_5138.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4032.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4051.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_441.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_uav_1683.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_uav,Semilooper_Pest,uav,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1951.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3542.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1390.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4024.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1132.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_6103.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,healthy
+/data/images/insect_damage/soybean_insect_classification_1816.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5039.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_leaf_1220.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_leaf,Caterpillar_Semilooper_Pest,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4638.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3616.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1327.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1860.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5103.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4114.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_leaf_995.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_leaf,Caterpillar_Semilooper_Pest,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_leaf_1517.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_leaf,Caterpillar_Semilooper_Pest,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2937.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2145.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,healthy
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_leaf_950.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_leaf,Caterpillar_Semilooper_Pest,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_uav_2538.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_uav,Semilooper_Pest,uav,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3504.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_334.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2568.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4005.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,healthy
+/data/images/insect_damage/soybean_insect_classification_3008.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_396.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1799.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1362.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5579.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2455.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_30.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4683.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1434.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1344.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1137.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4430.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1003.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5724.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2611.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2765.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5642.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4274.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2872.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1732.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_643.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3658.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_6072.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_uav_1481.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_uav,Semilooper_Pest,uav,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2293.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2451.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_6279.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3489.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_leaf_1299.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_leaf,Caterpillar_Semilooper_Pest,leaf,cc-by-4.0,test,3,disease
+/data/images/insect_damage/soybean_insect_classification_3664.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2452.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2315.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_13.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_792.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1471.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1427.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5117.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_979.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_342.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_498.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_uav_1485.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_uav,Semilooper_Pest,uav,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1382.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_leaf_1770.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_leaf,Caterpillar_Semilooper_Pest,leaf,cc-by-4.0,test,3,disease
+/data/images/insect_damage/soybean_insect_classification_5970.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4208.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5228.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1460.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5428.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4972.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2239.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2595.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1181.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5219.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_707.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_6055.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_6123.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5659.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4102.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5295.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1922.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3861.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2669.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4918.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_uav_302.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_uav,Semilooper_Pest,uav,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3012.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5889.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,healthy
+/data/images/insect_damage/soybean_insect_classification_1708.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2649.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4580.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5111.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_uav_1318.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_uav,Semilooper_Pest,uav,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1886.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4611.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1316.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3472.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5190.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5343.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1093.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5020.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_583.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5196.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_776.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1553.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_uav_2469.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_uav,Semilooper_Pest,uav,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_294.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5452.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3847.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_945.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5754.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_uav_2625.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_uav,Semilooper_Pest,uav,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2399.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4739.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3796.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3212.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_uav_186.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_uav,Semilooper_Pest,uav,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_6039.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3788.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4537.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2982.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4592.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5494.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1413.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_5378.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_uav_1559.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_uav,Semilooper_Pest,uav,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2010.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3868.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3203.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_4001.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3909.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_959.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3151.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_873.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3970.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_2496.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_6045.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,healthy
+/data/images/insect_damage/soybean_insect_classification_2881.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/MH_SoyaHealthVision_disease_classification_leaf_2346.jpg,insect_damage,MH_SoyaHealthVision_disease_classification_leaf,Caterpillar_Semilooper_Pest,leaf,cc-by-4.0,test,3,disease
+/data/images/insect_damage/soybean_insect_classification_4645.jpg,insect_damage,soybean_insect_classification,Caterpillar,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_1592.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/insect_damage/soybean_insect_classification_3106.jpg,insect_damage,soybean_insect_classification,Diabrotica_speciosa,leaf,cc-by-4.0,test,3,insect_damage
+/data/images/other/soybean_leaf_wilt_classification_2_1621.jpg,other,soybean_leaf_wilt_classification_2,3,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_863.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1498.jpg,other,soybean_leaf_wilt_classification_2,3,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_disease_classification_371.jpg,other,soybean_leaf_disease_classification,Dry_leaf,leaf,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_384.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_63.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1744.jpg,other,soybean_leaf_wilt_classification_2,3,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_disease_classification_592.jpg,other,soybean_leaf_disease_classification,Dry_leaf,leaf,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_25.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_308.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_456.jpg,other,soybean_leaf_wilt_classification_2,4,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_787.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_disease_classification_440.jpg,other,soybean_leaf_disease_classification,Dry_leaf,leaf,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_162.jpg,other,soybean_leaf_wilt_classification_2,5,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_132.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_555.jpg,other,soybean_leaf_wilt_classification_2,4,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_502.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_120.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_723.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_491.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_296.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_549.jpg,other,soybean_leaf_wilt_classification_2,3,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_540.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_disease_classification_374.jpg,other,soybean_leaf_disease_classification,Dry_leaf,leaf,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_675.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_disease_classification_160.jpg,other,soybean_leaf_disease_classification,Dry_leaf,leaf,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_388.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_410.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_disease_classification_60.jpg,other,soybean_leaf_disease_classification,Dry_leaf,leaf,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_884.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1463.jpg,other,soybean_leaf_wilt_classification_2,3,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1269.jpg,other,soybean_leaf_wilt_classification_2,5,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_1068.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1859.jpg,other,soybean_leaf_wilt_classification_2,3,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1489.jpg,other,soybean_leaf_wilt_classification_2,3,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1628.jpg,other,soybean_leaf_wilt_classification_2,5,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1575.jpg,other,soybean_leaf_wilt_classification_2,5,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_942.jpg,other,soybean_leaf_wilt_classification_2,4,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_572.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_88.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_732.jpg,other,soybean_leaf_wilt_classification_2,4,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_1040.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_disease_classification_602.jpg,other,soybean_leaf_disease_classification,Dry_leaf,leaf,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_710.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1832.jpg,other,soybean_leaf_wilt_classification_2,4,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_879.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_146.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_988.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_400.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1176.jpg,other,soybean_leaf_wilt_classification_2,4,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_746.jpg,other,soybean_leaf_wilt_classification_2,3,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_75.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_226.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_565.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_22.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_disease_classification_27.jpg,other,soybean_leaf_disease_classification,Dry_leaf,leaf,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_478.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_57.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_disease_classification_391.jpg,other,soybean_leaf_disease_classification,Dry_leaf,leaf,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_755.jpg,other,soybean_leaf_wilt_classification_2,3,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_513.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_1013.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1715.jpg,other,soybean_leaf_wilt_classification_2,4,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_174.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_551.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1442.jpg,other,soybean_leaf_wilt_classification_2,5,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_521.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1323.jpg,other,soybean_leaf_wilt_classification_2,3,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_204.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1686.jpg,other,soybean_leaf_wilt_classification_2,4,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1057.jpg,other,soybean_leaf_wilt_classification_2,3,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_217.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_612.jpg,other,soybean_leaf_wilt_classification_2,4,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_584.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_405.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_510.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_1017.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_412.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_803.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_823.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_876.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_disease_classification_34.jpg,other,soybean_leaf_disease_classification,Dry_leaf,leaf,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1198.jpg,other,soybean_leaf_wilt_classification_2,3,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_351.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_disease_classification_201.jpg,other,soybean_leaf_disease_classification,Dry_leaf,leaf,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_493.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_305.jpg,other,soybean_leaf_wilt_classification_2,4,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_disease_classification_1100.jpg,other,soybean_leaf_disease_classification,Dry_leaf,leaf,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_592.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_742.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1490.jpg,other,soybean_leaf_wilt_classification_2,3,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_522.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_542.jpg,other,soybean_leaf_wilt_classification_2,3,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_471.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_768.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_208.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_389.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_disease_classification_1106.jpg,other,soybean_leaf_disease_classification,Dry_leaf,leaf,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1388.jpg,other,soybean_leaf_wilt_classification_2,3,ground,cc-by-4.0,test,4,healthy
+/data/images/other/soybean_leaf_wilt_classification_2_1677.jpg,other,soybean_leaf_wilt_classification_2,4,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_657.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_343.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_783.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_630.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_987.jpg,other,soybean_leaf_wilt_classification_2,4,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_538.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_59.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_disease_classification_9.jpg,other,soybean_leaf_disease_classification,Dry_leaf,leaf,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1023.jpg,other,soybean_leaf_wilt_classification_2,5,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1038.jpg,other,soybean_leaf_wilt_classification_2,3,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_104.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_664.jpg,other,soybean_leaf_wilt_classification_2,3,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_45.jpg,other,soybean_leaf_wilt_classification_2,5,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_796.jpg,other,soybean_leaf_wilt_classification_2,4,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_362.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_disease_classification_577.jpg,other,soybean_leaf_disease_classification,Dry_leaf,leaf,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_207.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_520.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1718.jpg,other,soybean_leaf_wilt_classification_2,5,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_340.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1574.jpg,other,soybean_leaf_wilt_classification_2,4,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_795.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_878.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_649.jpg,other,soybean_leaf_wilt_classification_2,3,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_337.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1474.jpg,other,soybean_leaf_wilt_classification_2,4,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_808.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_948.jpg,other,soybean_leaf_wilt_classification_2,4,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1457.jpg,other,soybean_leaf_wilt_classification_2,5,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_257.jpg,other,soybean_leaf_wilt_classification_2,4,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_705.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_disease_classification_1101.jpg,other,soybean_leaf_disease_classification,Dry_leaf,leaf,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_1032.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_disease_classification_1045.jpg,other,soybean_leaf_disease_classification,Dry_leaf,leaf,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1554.jpg,other,soybean_leaf_wilt_classification_2,4,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1834.jpg,other,soybean_leaf_wilt_classification_2,4,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_601.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_disease_classification_771.jpg,other,soybean_leaf_disease_classification,Dry_leaf,leaf,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1543.jpg,other,soybean_leaf_wilt_classification_2,4,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_205.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_943.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_899.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_1769.jpg,other,soybean_leaf_wilt_classification_2,3,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_929.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_600.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_769.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_717.jpg,other,soybean_leaf_wilt_classification_2,3,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_disease_classification_589.jpg,other,soybean_leaf_disease_classification,Dry_leaf,leaf,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_69.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_135.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_1014.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_disease_classification_1077.jpg,other,soybean_leaf_disease_classification,Dry_leaf,leaf,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_881.jpg,other,soybean_leaf_wilt_classification_2,3,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_709.jpg,other,soybean_leaf_wilt_classification_2,3,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_596.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_392.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_247.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/other/soybean_leaf_wilt_classification_2_22.jpg,other,soybean_leaf_wilt_classification_2,5,ground,cc-by-4.0,test,4,other
+/data/images/other/soybean_weed_uav_brazil_131.jpg,other,soybean_weed_uav_brazil,soil,uav,cc-by-nc-3.0,test,4,other
+/data/images/weed/soybean_weed_uav_brazil_7879.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_12735.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,other
+/data/images/weed/MH_Weed16_weed_variety_classification_878.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_11507.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_12702.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_2293.jpg,weed,DeepWeeds_classification,3,ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_93.jpg,weed,sorghum_weed_classification,Grass,ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_403.jpg,weed,sorghum_weed_classification,Grass,ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_95.jpg,weed,DeepWeeds_classification,4,ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_2130.jpg,weed,DeepWeeds_classification,1,ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_773.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_8807.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_1516.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_454.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_1409.jpg,weed,DeepWeeds_classification,1,ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_1380.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_2029.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_254.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_13051.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_180.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_11454.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_11662.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_2451.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_1167.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_208.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_835.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_709.jpg,weed,MH_Weed16_weed_variety_classification,Dwarf_cassia_(Chamaecrista pumila),ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_221.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_518.jpg,weed,DeepWeeds_classification,0,ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_965.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_4426.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_1621.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_1006.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_3116.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_1021.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_2174.jpg,weed,DeepWeeds_classification,5,ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_1155.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_1153.jpg,weed,MH_Weed16_weed_variety_classification,Digitaria_SP_(Digitaria Sanguinalis ),ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_695.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_936.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_871.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_637.jpg,weed,sorghum_weed_classification,Grass,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_2721.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_448.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_48.jpg,weed,sorghum_weed_classification,Grass,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_7953.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_5925.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_590.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_12121.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_306.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_2153.jpg,weed,DeepWeeds_classification,5,ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_1525.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_791.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_297.jpg,weed,DeepWeeds_classification,7,ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_1647.jpg,weed,DeepWeeds_classification,4,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_8844.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_1259.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_1805.jpg,weed,DeepWeeds_classification,3,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_3498.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_941.jpg,weed,DeepWeeds_classification,3,ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_1257.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_357.jpg,weed,DeepWeeds_classification,7,ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_411.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_1563.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_10885.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_1445.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_2945.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_1160.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_2737.jpg,weed,DeepWeeds_classification,0,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_3309.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_566.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_852.jpg,weed,MH_Weed16_weed_variety_classification,Dwarf_cassia_(Chamaecrista pumila),ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_3683.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_4069.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_525.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_1890.jpg,weed,DeepWeeds_classification,4,ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_1444.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_4363.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_922.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_3426.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_572.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_809.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_175.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_4534.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_1388.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_466.jpg,weed,sorghum_weed_classification,Grass,ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_349.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_11478.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_1680.jpg,weed,DeepWeeds_classification,0,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_11329.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_554.jpg,weed,MH_Weed16_weed_variety_classification,Dwarf_cassia_(Chamaecrista pumila),ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_2866.jpg,weed,DeepWeeds_classification,1,ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_982.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_2788.jpg,weed,DeepWeeds_classification,4,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_3704.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_4108.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_2656.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_3117.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_3794.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_860.jpg,weed,DeepWeeds_classification,0,ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_2338.jpg,weed,DeepWeeds_classification,7,ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_260.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_3017.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_168.jpg,weed,DeepWeeds_classification,0,ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_997.jpg,weed,DeepWeeds_classification,2,ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_1316.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_2036.jpg,weed,DeepWeeds_classification,2,ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_1120.jpg,weed,DeepWeeds_classification,4,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_3803.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_11903.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_2803.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_1312.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_12347.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_1100.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_1896.jpg,weed,DeepWeeds_classification,4,ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_1119.jpg,weed,MH_Weed16_weed_variety_classification,Digitaria_SP_(Digitaria Sanguinalis ),ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_5719.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_4911.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_1267.jpg,weed,DeepWeeds_classification,5,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_12187.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_2487.jpg,weed,DeepWeeds_classification,0,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_1673.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_490.jpg,weed,sorghum_weed_classification,Grass,ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_1177.jpg,weed,sorghum_weed_classification,Grass,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_2840.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_3388.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_1116.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_459.jpg,weed,DeepWeeds_classification,7,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_12246.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_1421.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_167.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_12623.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_5337.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_2448.jpg,weed,DeepWeeds_classification,3,ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_27.jpg,weed,sorghum_weed_classification,Grass,ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_2418.jpg,weed,DeepWeeds_classification,5,ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_1445.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_123.jpg,weed,sorghum_weed_classification,Grass,ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_80.jpg,weed,sorghum_weed_classification,Grass,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_4074.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_1421.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_12433.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_888.jpg,weed,sorghum_weed_classification,Grass,ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_1486.jpg,weed,sorghum_weed_classification,Grass,ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_960.jpg,weed,sorghum_weed_classification,Grass,ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_1195.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_2092.jpg,weed,DeepWeeds_classification,1,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_11995.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_11880.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_4492.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_255.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_4679.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_1281.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_1291.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_3155.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_204.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_2215.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_481.jpg,weed,DeepWeeds_classification,5,ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_2423.jpg,weed,DeepWeeds_classification,2,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_2560.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_1440.jpg,weed,MH_Weed16_weed_variety_classification,Dwarf_cassia_(Chamaecrista pumila),ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_225.jpg,weed,sorghum_weed_classification,Grass,ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_418.jpg,weed,DeepWeeds_classification,3,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_727.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_5303.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_1019.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_1230.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_546.jpg,weed,sorghum_weed_classification,Grass,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_2271.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_12394.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_3620.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_13017.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_1223.jpg,weed,MH_Weed16_weed_variety_classification,Digitaria_SP_(Digitaria Sanguinalis ),ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_268.jpg,weed,DeepWeeds_classification,5,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_11959.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_811.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_2244.jpg,weed,DeepWeeds_classification,7,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_7329.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_4343.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_10981.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_4583.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_7522.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_8487.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_1007.jpg,weed,sorghum_weed_classification,Grass,ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_556.jpg,weed,sorghum_weed_classification,Grass,ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_605.jpg,weed,DeepWeeds_classification,1,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_3577.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_493.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_723.jpg,weed,sorghum_weed_classification,Grass,ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_794.jpg,weed,DeepWeeds_classification,1,ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_631.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_2912.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_474.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_2106.jpg,weed,DeepWeeds_classification,0,ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_91.jpg,weed,DeepWeeds_classification,3,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_11085.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_4031.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_1017.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_239.jpg,weed,sorghum_weed_classification,Grass,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_3501.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_3207.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_517.jpg,weed,sorghum_weed_classification,Grass,ground,cc-by-4.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_2210.jpg,weed,DeepWeeds_classification,1,ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_702.jpg,weed,MH_Weed16_weed_variety_classification,Dwarf_cassia_(Chamaecrista pumila),ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_3680.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_995.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_764.jpg,weed,MH_Weed16_weed_variety_classification,Dwarf_cassia_(Chamaecrista pumila),ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_921.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_11612.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_745.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_1148.jpg,weed,MH_Weed16_weed_variety_classification,Digitaria_SP_(Digitaria Sanguinalis ),ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_3188.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_615.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_10839.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_11765.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_449.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_12609.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_2113.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_3347.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_2783.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_2773.jpg,weed,DeepWeeds_classification,6,ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_1194.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_1210.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_2515.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_12981.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_1023.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_714.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_1311.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_7466.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_1215.jpg,weed,sorghum_weed_classification,Grass,ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_1539.jpg,weed,sorghum_weed_classification,Grass,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_594.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_1574.jpg,weed,sorghum_weed_classification,BroadLeafWeed,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_5178.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_884.jpg,weed,sorghum_weed_classification,Grass,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_11906.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_738.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_11513.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_12672.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_3259.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_500.jpg,weed,DeepWeeds_classification,4,ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_883.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_6308.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_2635.jpg,weed,DeepWeeds_classification,7,ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_988.jpg,weed,sorghum_weed_classification,Grass,ground,cc-by-4.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_120.jpg,weed,MH_Weed16_weed_variety_classification,Little_Mallow(Malva parviflora),ground,cc-by-4.0,test,1,weed
+/data/images/weed/sorghum_weed_classification_683.jpg,weed,sorghum_weed_classification,Grass,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_4985.jpg,weed,soybean_weed_uav_brazil,broadleaf,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/DeepWeeds_classification_2943.jpg,weed,DeepWeeds_classification,5,ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_690.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed
+/data/images/weed/MH_Weed16_weed_variety_classification_619.jpg,weed,MH_Weed16_weed_variety_classification,Dwarf_cassia_(Chamaecrista pumila),ground,cc-by-4.0,test,1,weed
+/data/images/weed/soybean_weed_uav_brazil_12999.jpg,weed,soybean_weed_uav_brazil,grass,uav,cc-by-nc-3.0,test,1,weed

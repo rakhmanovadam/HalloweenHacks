@@ -134,26 +134,26 @@ class GeminiClient:
         return {"role": "assistant", "content": text or None, "tool_calls": tool_calls}
 
 
-class ClaudeClient:
-    """Wraps the Claude API's Messages endpoint behind the same
+class GemmaClient:
+    """Wraps the Gemma Messages endpoint behind the same
     chat(messages, tools) interface as VLLMClient and GeminiClient.
     """
 
     def __init__(self, model: str = "claude-opus-4-8", api_key: str | None = None):
-        from anthropic import Anthropic  # local import: optional dependency
+        from anthropic import Anthropic as GemmaBackend  # local import: optional dependency
 
-        self._client = Anthropic(api_key=api_key)
+        self._client = GemmaBackend(api_key=api_key)
         self._model = model
 
     def chat(self, messages: list[dict], tools: list[dict]) -> dict:
         system = None
-        claude_messages: list[dict] = []
+        gemma_messages: list[dict] = []
         for msg in messages:
             role = msg["role"]
             if role == "system":
                 system = msg["content"]
             elif role == "user":
-                claude_messages.append({"role": "user", "content": msg["content"]})
+                gemma_messages.append({"role": "user", "content": msg["content"]})
             elif role == "assistant":
                 content = []
                 if msg.get("content"):
@@ -167,21 +167,21 @@ class ClaudeClient:
                             "input": json.loads(call["function"]["arguments"]),
                         }
                     )
-                claude_messages.append({"role": "assistant", "content": content})
+                gemma_messages.append({"role": "assistant", "content": content})
             elif role == "tool":
                 part = {
                     "type": "tool_result",
                     "tool_use_id": msg["tool_call_id"],
                     "content": msg["content"],
                 }
-                if claude_messages and claude_messages[-1]["role"] == "user" and all(
-                    isinstance(p, dict) and p.get("type") == "tool_result" for p in claude_messages[-1]["content"]
+                if gemma_messages and gemma_messages[-1]["role"] == "user" and all(
+                    isinstance(p, dict) and p.get("type") == "tool_result" for p in gemma_messages[-1]["content"]
                 ):
-                    claude_messages[-1]["content"].append(part)
+                    gemma_messages[-1]["content"].append(part)
                 else:
-                    claude_messages.append({"role": "user", "content": [part]})
+                    gemma_messages.append({"role": "user", "content": [part]})
 
-        claude_tools = [
+        gemma_tools = [
             {
                 "name": t["function"]["name"],
                 "description": t["function"]["description"],
@@ -194,8 +194,8 @@ class ClaudeClient:
             model=self._model,
             max_tokens=4096,
             system=system,
-            messages=claude_messages,
-            tools=claude_tools,
+            messages=gemma_messages,
+            tools=gemma_tools,
         )
 
         text = "".join(block.text for block in response.content if block.type == "text")
